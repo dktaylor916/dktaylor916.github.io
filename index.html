@@ -1,0 +1,2387 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_336cb3677193405e8805f92c0b86f9a7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://dl.dropboxusercontent.com/s/ikbodjpamk74h21/markercluster_size.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://dl.dropboxusercontent.com/s/21c5brkbfsf8mww/markerclustersnew.css"/>
+    
+                <style>
+                    #float_image_0e5ea04440b64a4f8f281af09923b6b5 {
+                        position:absolute;
+                        bottom:5%;
+                        left:85%;
+                        }
+                </style>
+            
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_336cb3677193405e8805f92c0b86f9a7" ></div>
+        
+    
+            <img id="float_image_0e5ea04440b64a4f8f281af09923b6b5" alt="float_image"
+                 src="https://i.imgur.com/NkHyYl0.png?2"
+                 style="z-index: 999999">
+            </img>
+            
+</body>
+<script>    
+    
+            var map_336cb3677193405e8805f92c0b86f9a7 = L.map(
+                "map_336cb3677193405e8805f92c0b86f9a7",
+                {
+                    center: [38.548165, -101.075745],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8ef71105322a4543a6e40a8e73c52760 = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/dktaylor916/ck9twh17g0ril1io0y7qriisz/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZGt0YXlsb3I5MTYiLCJhIjoiY2pnMWJtNHhqMWMzNzJxbnlkbWN5dDhuNCJ9.HV6GHKQwSEgvdNWn9qGLkw",
+                {"attribution": "Mapbox", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_336cb3677193405e8805f92c0b86f9a7);
+        
+    
+            var marker_cluster_b7fac17781df4629b2bb740198a5adf0 = L.markerClusterGroup(
+                {}
+            );
+            map_336cb3677193405e8805f92c0b86f9a7.addLayer(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+            var marker_81b6ba5566e14b9286730caa0d44571c = L.marker(
+                [44.948388, -93.234033],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_a56b147c4c1440d69ecf4b089a8faf27 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/5uNPdy2.png"});
+        marker_81b6ba5566e14b9286730caa0d44571c.setIcon(custom_icon_a56b147c4c1440d69ecf4b089a8faf27);
+        
+    
+        var popup_ad8e249b74174d7d8def28f8db4af1eb = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_2e143bab86c24ae689f96745f3400b07 = $(`<div id="html_2e143bab86c24ae689f96745f3400b07" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>29/05/2020, 05:11 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Omar Jimenez / Leonel Mendez / Bill Kirkos             <br><h1 style="font-size:13px;"><b>Organization</b>:</h1>CNN<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter and crew arrested while reporting live<br><br><center><b><a href="https://twitter.com/NickGjerde/status/1266311406649061377">Twitter Link</a></b></center></div>`)[0];
+            popup_ad8e249b74174d7d8def28f8db4af1eb.setContent(html_2e143bab86c24ae689f96745f3400b07);
+        
+
+        marker_81b6ba5566e14b9286730caa0d44571c.bindPopup(popup_ad8e249b74174d7d8def28f8db4af1eb)
+        ;
+
+        
+    
+    
+            var marker_f3f3c914d727467e86336d081356c44d = L.marker(
+                [38.254123, -85.760135],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_b92e4c7b2f2041a19cddc157dd988b81 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_f3f3c914d727467e86336d081356c44d.setIcon(custom_icon_b92e4c7b2f2041a19cddc157dd988b81);
+        
+    
+        var popup_1707749e63af4ef5ab50ed14e7d80f6c = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_49b53a640f9043c3b4ba4a7fe9063c64 = $(`<div id="html_49b53a640f9043c3b4ba4a7fe9063c64" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>29/05/2020, 22:23 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Kaitlin Rust<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>WAVE 3 News<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter and photojournalist shot at close range with rubber bullets or paintball pellets<br><br><center><b><a href="https://twitter.com/N_Waters89/status/1266677415352446978">Twitter Link</a></b></center></div>`)[0];
+            popup_1707749e63af4ef5ab50ed14e7d80f6c.setContent(html_49b53a640f9043c3b4ba4a7fe9063c64);
+        
+
+        marker_f3f3c914d727467e86336d081356c44d.bindPopup(popup_1707749e63af4ef5ab50ed14e7d80f6c)
+        ;
+
+        
+    
+    
+            var marker_9f4b7d163df140dfa811d7beb1a5a4fb = L.marker(
+                [39.740314, -104.986001],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_945cb9cb9f504361a2fa623ae5e174f9 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_9f4b7d163df140dfa811d7beb1a5a4fb.setIcon(custom_icon_945cb9cb9f504361a2fa623ae5e174f9);
+        
+    
+        var popup_b7fe5f0d019b469dbef021c5687b73d8 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_74a1a8f194f24a63976f551001a2a8c1 = $(`<div id="html_74a1a8f194f24a63976f551001a2a8c1" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>29/05/2020, 20:17 MDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Adi Guajardo / Jan Czernik<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Denver7 News<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Police fired "paintballs and teargas" at reporter and her crew. Crew's photographer was hit four times, and the camera was also hit.<br><br><center><b><a href="https://twitter.com/N_Waters89/status/1266670730441379844">Twitter Link</a></b></center></div>`)[0];
+            popup_b7fe5f0d019b469dbef021c5687b73d8.setContent(html_74a1a8f194f24a63976f551001a2a8c1);
+        
+
+        marker_9f4b7d163df140dfa811d7beb1a5a4fb.bindPopup(popup_b7fe5f0d019b469dbef021c5687b73d8)
+        ;
+
+        
+    
+    
+            var marker_c487cad477744206a9734e6ac5e64d0f = L.marker(
+                [39.76853, -86.15982],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_5916836cf3244f9a84165c97f8eaeb64 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/zuGyJRR.png"});
+        marker_c487cad477744206a9734e6ac5e64d0f.setIcon(custom_icon_5916836cf3244f9a84165c97f8eaeb64);
+        
+    
+        var popup_3d9b6b7c1bf544b2acc2511763d062ff = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_62d80b854ea94c54b18f29fc48b33c76 = $(`<div id="html_62d80b854ea94c54b18f29fc48b33c76" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>29/05/2020, 22:49 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Kelly Willinson<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Indy Star<br><h1 style="font-size:13px;"><b>Description</b>:</h1>A police officer points a less-than-lethal weapon at a photographer who was taking pictures of him and his group<br><br><center><b><a href="https://twitter.com/N_Waters89/status/1266693614975016966">Twitter Link</a></b></center></div>`)[0];
+            popup_3d9b6b7c1bf544b2acc2511763d062ff.setContent(html_62d80b854ea94c54b18f29fc48b33c76);
+        
+
+        marker_c487cad477744206a9734e6ac5e64d0f.bindPopup(popup_3d9b6b7c1bf544b2acc2511763d062ff)
+        ;
+
+        
+    
+    
+            var marker_05451cdf1a4f4e5d868810b739a931b2 = L.marker(
+                [44.94818, -93.23841],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_abc2ad296b13491985858e364553b042 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_05451cdf1a4f4e5d868810b739a931b2.setIcon(custom_icon_abc2ad296b13491985858e364553b042);
+        
+    
+        var popup_57d8dbbc8cb74896b3ad57ba7ede34bb = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_b91100b861344727863d343afd927639 = $(`<div id="html_b91100b861344727863d343afd927639" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020, 23:03 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Jason<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Minnesota News Now<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Independent journalist was tackled and hit while on the ground by police. He said he told the police that he was media, and that he was carrying his camera, but that the police "didn't care". <br><br><center><b><a href="https://twitter.com/nicola_imfeld/status/1266580948847558659">Twitter Link</a></b></center></div>`)[0];
+            popup_57d8dbbc8cb74896b3ad57ba7ede34bb.setContent(html_b91100b861344727863d343afd927639);
+        
+
+        marker_05451cdf1a4f4e5d868810b739a931b2.bindPopup(popup_57d8dbbc8cb74896b3ad57ba7ede34bb)
+        ;
+
+        
+    
+    
+            var marker_9e02e7674fab47928838309f823e8aac = L.marker(
+                [44.94841, -93.23474],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_b2373e0fafd64139bd3edac2fa3b768d = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_9e02e7674fab47928838309f823e8aac.setIcon(custom_icon_b2373e0fafd64139bd3edac2fa3b768d);
+        
+    
+        var popup_c42a7c5c2ee54a3ebff4052d27eca656 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_1af5b0d8c8084ce0a9ca9af2c247ec0e = $(`<div id="html_1af5b0d8c8084ce0a9ca9af2c247ec0e" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020, 01:32 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Linda Tirado<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Independent <br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was hit in the eye with a pepper or paint ball, causing her to later go blind (she posted an update from the hospital).<br><br><center><b><a href="https://twitter.com/KillerMartinis/status/1266618525600399361">Twitter Link</a></b></center></div>`)[0];
+            popup_c42a7c5c2ee54a3ebff4052d27eca656.setContent(html_1af5b0d8c8084ce0a9ca9af2c247ec0e);
+        
+
+        marker_9e02e7674fab47928838309f823e8aac.bindPopup(popup_c42a7c5c2ee54a3ebff4052d27eca656)
+        ;
+
+        
+    
+    
+            var marker_13af93e0c33a41f3a54f8c6943cf75fa = L.marker(
+                [44.9484, -93.28754],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_3536740a871e453daa55bddf863d45a8 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/zuGyJRR.png"});
+        marker_13af93e0c33a41f3a54f8c6943cf75fa.setIcon(custom_icon_3536740a871e453daa55bddf863d45a8);
+        
+    
+        var popup_b0c7eddfd3b14a2494883712e05e13ca = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_4d0185e69e0c4830a67ec7fafb2ddda3 = $(`<div id="html_4d0185e69e0c4830a67ec7fafb2ddda3" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020, 03:46 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Nico (?)<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Unicorn Riot<br><h1 style="font-size:13px;"><b>Description</b>:</h1>A group of police officers shove journalists in Minneapolis and a man there were interviewing into a building<br><br><center><b><a href="https://twitter.com/UR_Ninja/status/1266652249650016257">Twitter Link</a></b></center></div>`)[0];
+            popup_b0c7eddfd3b14a2494883712e05e13ca.setContent(html_4d0185e69e0c4830a67ec7fafb2ddda3);
+        
+
+        marker_13af93e0c33a41f3a54f8c6943cf75fa.bindPopup(popup_b0c7eddfd3b14a2494883712e05e13ca)
+        ;
+
+        
+    
+    
+            var marker_bd661e08f75b4deba2a5c5a29330bfa8 = L.marker(
+                [44.94495, -93.27787],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_77091ea3551d43a693992d0adca858a4 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/zuGyJRR.png"});
+        marker_bd661e08f75b4deba2a5c5a29330bfa8.setIcon(custom_icon_77091ea3551d43a693992d0adca858a4);
+        
+    
+        var popup_e436edeb25374d738165537c60207e5a = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_ee0140ec4c2b4c71bf3559bccc997de3 = $(`<div id="html_ee0140ec4c2b4c71bf3559bccc997de3" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>28/05/2020, 01:02 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Madeleine Baran / Samara Freemark<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>APM Reports<br><h1 style="font-size:13px;"><b>Description</b>:</h1>A police officer "pointed a weapon at" Baran and Freemark. Baran identified herself as a journalist but the officer "did not lower his weapon", and so Baran and Freemark had to flee the area. <br><br><center><b><a href="https://twitter.com/madeleinebaran/status/1266610933071138816">Twitter Link</a></b></center></div>`)[0];
+            popup_e436edeb25374d738165537c60207e5a.setContent(html_ee0140ec4c2b4c71bf3559bccc997de3);
+        
+
+        marker_bd661e08f75b4deba2a5c5a29330bfa8.bindPopup(popup_e436edeb25374d738165537c60207e5a)
+        ;
+
+        
+    
+    
+            var marker_f0bc2b8788bf45ee819e1822f9292603 = L.marker(
+                [44.94859, -93.27925],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_999929e2aa944f9885f163880a3336c9 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_f0bc2b8788bf45ee819e1822f9292603.setIcon(custom_icon_999929e2aa944f9885f163880a3336c9);
+        
+    
+        var popup_f4bd97f8f40e4c158a748640a5718aa9 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_c311f3c934054642a8277d82b61e2ec3 = $(`<div id="html_c311f3c934054642a8277d82b61e2ec3" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>29/05/2020, 21:28 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Michael George<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>CBS News<br><h1 style="font-size:13px;"><b>Description</b>:</h1>A group of police officers fire in the direction of a reporter and crew.<br><br><center><b><a href="https://twitter.com/MikeGeorgeCBS/status/1266919447970942986">Twitter Link</a></b></center></div>`)[0];
+            popup_f4bd97f8f40e4c158a748640a5718aa9.setContent(html_c311f3c934054642a8277d82b61e2ec3);
+        
+
+        marker_f0bc2b8788bf45ee819e1822f9292603.bindPopup(popup_f4bd97f8f40e4c158a748640a5718aa9)
+        ;
+
+        
+    
+    
+            var marker_e959bdc77b914e719d3d814d47a01382 = L.marker(
+                [44.94624, -93.27792],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_5640c1e7cee34fe1ba1636862ee3f1c7 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_e959bdc77b914e719d3d814d47a01382.setIcon(custom_icon_5640c1e7cee34fe1ba1636862ee3f1c7);
+        
+    
+        var popup_00cac26d73af44cc962628d227284dff = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_955d5f29cf1f4ac1a29fd3a5662bb130 = $(`<div id="html_955d5f29cf1f4ac1a29fd3a5662bb130" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>29/05/2020, 20:56 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Molly Hennesy-Fiske (and others)<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>LA Times<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Minnesota State Patrol fired tear gas cannisters at point-blank range at a group of at leat a dozen journalists. Hennesy-Fiske was hit in the leg with a tear gas cannister. <br><br><center><b><a href="https://twitter.com/mollyhf/status/1266911382613692422">Twitter Link</a></b></center></div>`)[0];
+            popup_00cac26d73af44cc962628d227284dff.setContent(html_955d5f29cf1f4ac1a29fd3a5662bb130);
+        
+
+        marker_e959bdc77b914e719d3d814d47a01382.bindPopup(popup_00cac26d73af44cc962628d227284dff)
+        ;
+
+        
+    
+    
+            var marker_9d79200339454c868fc9adf82b80cda1 = L.marker(
+                [44.94869, -93.24941],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_83ef7388b6f24f2f9f2dd42827cbb5c7 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/zuGyJRR.png"});
+        marker_9d79200339454c868fc9adf82b80cda1.setIcon(custom_icon_83ef7388b6f24f2f9f2dd42827cbb5c7);
+        
+    
+        var popup_91770b742c394ebdae24e5e76ff8ed42 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_639b43a3b5db4c039f951cf05fb5e010 = $(`<div id="html_639b43a3b5db4c039f951cf05fb5e010" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>29/05/2020, 22:46 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Michael Anthony (and others)<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Vice News<br><h1 style="font-size:13px;"><b>Description</b>:</h1>A police officer points his weapon for a prolonged period of time at a group of journalists.<br><br><center><b><a href="https://twitter.com/MichaelAdams317/status/1266938990298574848">Twitter Link</a></b></center></div>`)[0];
+            popup_91770b742c394ebdae24e5e76ff8ed42.setContent(html_639b43a3b5db4c039f951cf05fb5e010);
+        
+
+        marker_9d79200339454c868fc9adf82b80cda1.bindPopup(popup_91770b742c394ebdae24e5e76ff8ed42)
+        ;
+
+        
+    
+    
+            var marker_e3f413b22a294fdcbb8a7c2cf8cbf25c = L.marker(
+                [44.9487, -93.24922],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_064b5db7cc4348d18f45e6db63452fa0 = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.imgur.com/nsmJ9Mb.png"});
+        marker_e3f413b22a294fdcbb8a7c2cf8cbf25c.setIcon(custom_icon_064b5db7cc4348d18f45e6db63452fa0);
+        
+    
+        var popup_b4525c2ac8324103b7a59638ca98d351 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_00013f57180a4a11b4b943ed9c3833cc = $(`<div id="html_00013f57180a4a11b4b943ed9c3833cc" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>29/05/2020 23:11 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Michael Anthony (and others)<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Vice News<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Police officers force Anthony and a photojournalist to get on the floor. The two are identifying themselves as press, and Anthony is holding his pass in the air. As Anthony is laying on the floor, an officer sprays him in the face with pepper-spray.<br><br><center><b><a href="https://twitter.com/MichaelAdams317/status/1266945268567678976">Twitter Link</a></b></center></div>`)[0];
+            popup_b4525c2ac8324103b7a59638ca98d351.setContent(html_00013f57180a4a11b4b943ed9c3833cc);
+        
+
+        marker_e3f413b22a294fdcbb8a7c2cf8cbf25c.bindPopup(popup_b4525c2ac8324103b7a59638ca98d351)
+        ;
+
+        
+    
+    
+            var marker_54c0656884b649be8c11205dcb367ecd = L.marker(
+                [44.94784, -93.27743],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_4c3d5fe993984594a66cf1d5aa97b3c6 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_54c0656884b649be8c11205dcb367ecd.setIcon(custom_icon_4c3d5fe993984594a66cf1d5aa97b3c6);
+        
+    
+        var popup_a79724d077584cb8a4346b13f3743873 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_1f972a301a6846c38585c7b061f53e79 = $(`<div id="html_1f972a301a6846c38585c7b061f53e79" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020 21:01 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>-----<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>-----<br><h1 style="font-size:13px;"><b>Description</b>:</h1>A camera man in a press vest and press helmet is running away from a scene after clearly being hit by a less lethal round.<br><br><center><b><a href="https://twitter.com/bubbaprog/status/1266912774833287169">Twitter Link</a></b></center></div>`)[0];
+            popup_a79724d077584cb8a4346b13f3743873.setContent(html_1f972a301a6846c38585c7b061f53e79);
+        
+
+        marker_54c0656884b649be8c11205dcb367ecd.bindPopup(popup_a79724d077584cb8a4346b13f3743873)
+        ;
+
+        
+    
+    
+            var marker_88a27ddc7ccb459ea98f6714486758cd = L.marker(
+                [44.94779, -93.27939],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_e552a08ecd3f4faeb98491ddc02fb932 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_88a27ddc7ccb459ea98f6714486758cd.setIcon(custom_icon_e552a08ecd3f4faeb98491ddc02fb932);
+        
+    
+        var popup_9dca35bccb084cb38640d415a80a33c5 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_325dd7a8b4924ebe80df2a1f47bfe5fc = $(`<div id="html_325dd7a8b4924ebe80df2a1f47bfe5fc" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020 20:54 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Morgan Chesky<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>MSNBC<br><h1 style="font-size:13px;"><b>Description</b>:</h1>A group of reporters were almost hit by an explosive deployed by law enforcement towards them while they are filming on the air.<br><br><center><b><a href="https://twitter.com/atrupar/status/1266910910137995264">Twitter Link</a></b></center></div>`)[0];
+            popup_9dca35bccb084cb38640d415a80a33c5.setContent(html_325dd7a8b4924ebe80df2a1f47bfe5fc);
+        
+
+        marker_88a27ddc7ccb459ea98f6714486758cd.bindPopup(popup_9dca35bccb084cb38640d415a80a33c5)
+        ;
+
+        
+    
+    
+            var marker_0aebd4058f4644cf87327a15c31b5cef = L.marker(
+                [44.9633, -93.27739],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_d825d221100a426c8ed4cba58812911d = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/5uNPdy2.png"});
+        marker_0aebd4058f4644cf87327a15c31b5cef.setIcon(custom_icon_d825d221100a426c8ed4cba58812911d);
+        
+    
+        var popup_6ba14cb8a1a345a6a8f0f556afa69e8d = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_50543ddab7e6451786b30c5c1209968c = $(`<div id="html_50543ddab7e6451786b30c5c1209968c" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05/2020 00:48 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Tom Aviles<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>WCCO<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter is arrested by the police even after clearly identifying himself as press.<br><br><center><b><a href="https://twitter.com/chadloder/status/1266969809125666818?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_6ba14cb8a1a345a6a8f0f556afa69e8d.setContent(html_50543ddab7e6451786b30c5c1209968c);
+        
+
+        marker_0aebd4058f4644cf87327a15c31b5cef.bindPopup(popup_6ba14cb8a1a345a6a8f0f556afa69e8d)
+        ;
+
+        
+    
+    
+            var marker_b4837999a1c1474e90d89d4bb7e59bab = L.marker(
+                [44.96198, -93.27783],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_6c98d8433b6b4cf38b83aaafe0f13c10 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_b4837999a1c1474e90d89d4bb7e59bab.setIcon(custom_icon_6c98d8433b6b4cf38b83aaafe0f13c10);
+        
+    
+        var popup_e24ad26407c84c1482f0a890dcc6dbc7 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_746f30578cd74d3b87d81d440c366609 = $(`<div id="html_746f30578cd74d3b87d81d440c366609" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05/2020 00:31 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Ali Veshi<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>MSNBC<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Crew comes under rubber bullet and tear gas fire deployed by the Minneapolis police.<br><br><center><b><a href="https://twitter.com/chadloder/status/1266962631887224837?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_e24ad26407c84c1482f0a890dcc6dbc7.setContent(html_746f30578cd74d3b87d81d440c366609);
+        
+
+        marker_b4837999a1c1474e90d89d4bb7e59bab.bindPopup(popup_e24ad26407c84c1482f0a890dcc6dbc7)
+        ;
+
+        
+    
+    
+            var marker_4f133491fb0b41a19592b42f8bdb5092 = L.marker(
+                [44.945604, -93.277987],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_9b38ec08994c424a923865c190266a31 = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.imgur.com/nsmJ9Mb.png"});
+        marker_4f133491fb0b41a19592b42f8bdb5092.setIcon(custom_icon_9b38ec08994c424a923865c190266a31);
+        
+    
+        var popup_e44253f5359342cdb58a49f1ebaf6a44 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_90009254f80b408da543b38cc0f0fc02 = $(`<div id="html_90009254f80b408da543b38cc0f0fc02" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020 21:26 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Ryan Raiche<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>KSTP<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Police tear gassed and pepper sprayed a group of reporters who were standing in what they thought was a safe zone.<br><br><center><b><a href="https://twitter.com/ryanraiche/status/1266919035033264130">Twitter Link</a></b></center></div>`)[0];
+            popup_e44253f5359342cdb58a49f1ebaf6a44.setContent(html_90009254f80b408da543b38cc0f0fc02);
+        
+
+        marker_4f133491fb0b41a19592b42f8bdb5092.bindPopup(popup_e44253f5359342cdb58a49f1ebaf6a44)
+        ;
+
+        
+    
+    
+            var marker_43ce28fe2a044f0990713100c31f2e7f = L.marker(
+                [44.94835, -93.2423],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_650517b0c4de4a97af4d0273b9de72ad = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_43ce28fe2a044f0990713100c31f2e7f.setIcon(custom_icon_650517b0c4de4a97af4d0273b9de72ad);
+        
+    
+        var popup_c0c86501f73740b88ed513caf9c7ed8f = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_5b1ef040af5441c8875ee5f187cc24ab = $(`<div id="html_5b1ef040af5441c8875ee5f187cc24ab" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020 23:46 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Ryan Faircloth / Chao Xiong <br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Star Tribune<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Two reporters mistakenly truend down a street that had been blocked off at the end. Before they had a chance to reverse, they were shot with rubber bullets. <br><br><center><b><a href="https://twitter.com/RyanFaircloth/status/1266954131324928003">Twitter Link</a></b></center></div>`)[0];
+            popup_c0c86501f73740b88ed513caf9c7ed8f.setContent(html_5b1ef040af5441c8875ee5f187cc24ab);
+        
+
+        marker_43ce28fe2a044f0990713100c31f2e7f.bindPopup(popup_c0c86501f73740b88ed513caf9c7ed8f)
+        ;
+
+        
+    
+    
+            var marker_d6b5871698604b8389a8726f02f3db8f = L.marker(
+                [34.07608, -118.36147],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_5c8fe5d34ef247549dabaf20d46650e7 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_d6b5871698604b8389a8726f02f3db8f.setIcon(custom_icon_5c8fe5d34ef247549dabaf20d46650e7);
+        
+    
+        var popup_a7d525a648404eddad5d4ec0ffddef28 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_4ef7ecfde32c427d80009e8e70ed0998 = $(`<div id="html_4ef7ecfde32c427d80009e8e70ed0998" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020 16:46 PDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Cerise Castle<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>KCRW<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was holding their press badge above their head when they got shot with rubber bullets in a group of protestors.<br><br><center><b><a href="https://twitter.com/cerisecastle/status/1266878695555231747">Twitter Link</a></b></center></div>`)[0];
+            popup_a7d525a648404eddad5d4ec0ffddef28.setContent(html_4ef7ecfde32c427d80009e8e70ed0998);
+        
+
+        marker_d6b5871698604b8389a8726f02f3db8f.bindPopup(popup_a7d525a648404eddad5d4ec0ffddef28)
+        ;
+
+        
+    
+    
+            var marker_ecc2e2467c404e278a67f9ff6cdcce3c = L.marker(
+                [41.89166, -87.62923],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_e314ab3ec4b943539ded8502dea18c38 = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.imgur.com/nsmJ9Mb.png"});
+        marker_ecc2e2467c404e278a67f9ff6cdcce3c.setIcon(custom_icon_e314ab3ec4b943539ded8502dea18c38);
+        
+    
+        var popup_775b0311ffa54e2c8071588876c81128 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_7be7b57da6944e95a6f9fdee8f2a2a09 = $(`<div id="html_7be7b57da6944e95a6f9fdee8f2a2a09" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020 20:04 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Jonathan Ballew<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Freelance<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was pepper sprayed.<br><br><center><b><a href="https://twitter.com/JCB_Journo/status/1266898345945169922">Twitter Link</a></b></center></div>`)[0];
+            popup_775b0311ffa54e2c8071588876c81128.setContent(html_7be7b57da6944e95a6f9fdee8f2a2a09);
+        
+
+        marker_ecc2e2467c404e278a67f9ff6cdcce3c.bindPopup(popup_775b0311ffa54e2c8071588876c81128)
+        ;
+
+        
+    
+    
+            var marker_354448341a6c416981764609c746b410 = L.marker(
+                [38.89952, -77.03653],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_38387c2bbb4a4a6d830349490efee547 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_354448341a6c416981764609c746b410.setIcon(custom_icon_38387c2bbb4a4a6d830349490efee547);
+        
+    
+        var popup_b5b125719c424ad0a15ec6b5e0b7e942 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_cf9dd58396324688979772419d8fe18c = $(`<div id="html_cf9dd58396324688979772419d8fe18c" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05 06:04 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Matthew Rodier<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>SipaUSA<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was hit in the hand with a less lethal round. It is unclear if he may have been targeted.<br><br><center><b><a href="https://twitter.com/mattrodierphot1/status/1267034121349595146">Twitter Link</a></b></center></div>`)[0];
+            popup_b5b125719c424ad0a15ec6b5e0b7e942.setContent(html_cf9dd58396324688979772419d8fe18c);
+        
+
+        marker_354448341a6c416981764609c746b410.bindPopup(popup_b5b125719c424ad0a15ec6b5e0b7e942)
+        ;
+
+        
+    
+    
+            var marker_bf06b4690d90409fa2a7c0c478d87990 = L.marker(
+                [44.9633, -93.27739],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_6e87898dbedd4eb0a4c10dcc6bfdce93 = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.imgur.com/nsmJ9Mb.png"});
+        marker_bf06b4690d90409fa2a7c0c478d87990.setIcon(custom_icon_6e87898dbedd4eb0a4c10dcc6bfdce93);
+        
+    
+        var popup_f1b1d9bfffff4459bda84c36e4152cea = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_a365a626efa54785a7979b3d064f2e63 = $(`<div id="html_a365a626efa54785a7979b3d064f2e63" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020 21:28 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Hossein Fatemi<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Panos Pictures<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was sprayed with tear gas.<br><br><center><b><a href="https://twitter.com/hosseinfatemii/status/1266919473111588865">Twitter Link</a></b></center></div>`)[0];
+            popup_f1b1d9bfffff4459bda84c36e4152cea.setContent(html_a365a626efa54785a7979b3d064f2e63);
+        
+
+        marker_bf06b4690d90409fa2a7c0c478d87990.bindPopup(popup_f1b1d9bfffff4459bda84c36e4152cea)
+        ;
+
+        
+    
+    
+            var marker_8080263b2d88481685cb6a70e76d185a = L.marker(
+                [40.79598, -73.97491],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_1fee5e05c2d84b7b90cc917fe50a90dd = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/5uNPdy2.png"});
+        marker_8080263b2d88481685cb6a70e76d185a.setIcon(custom_icon_1fee5e05c2d84b7b90cc917fe50a90dd);
+        
+    
+        var popup_0ff2cc6780bf4592bffc74da18152986 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_8045b9a8ba5a42f3a4c07b4dc08bf065 = $(`<div id="html_8045b9a8ba5a42f3a4c07b4dc08bf065" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05 23:22 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Keith Boykin<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>CNN<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was arrested while taking pictures. He was held in the van for an hour, then a police bus for an hour, and then the police precinct. He was in police custody for 6 hours. <br><br><center><b><a href="https://twitter.com/keithboykin/status/1266933018570219520">Twitter Link</a></b></center></div>`)[0];
+            popup_0ff2cc6780bf4592bffc74da18152986.setContent(html_8045b9a8ba5a42f3a4c07b4dc08bf065);
+        
+
+        marker_8080263b2d88481685cb6a70e76d185a.bindPopup(popup_0ff2cc6780bf4592bffc74da18152986)
+        ;
+
+        
+    
+    
+            var marker_0abb791bda4f448b85c25a5abfaec950 = L.marker(
+                [44.94592, -93.276684],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_2b9f6bc602d04173b575a3703fb3198e = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_0abb791bda4f448b85c25a5abfaec950.setIcon(custom_icon_2b9f6bc602d04173b575a3703fb3198e);
+        
+    
+        var popup_961a053f415f46adbb7560865eaecffe = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_7741a40aaf7840e7a6a30624380c4c2c = $(`<div id="html_7741a40aaf7840e7a6a30624380c4c2c" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05/2020 08:47 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Stefan Simons & crew<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Deutche Welle<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was threatened with arrest and later shot with less lethal rounds.<br><br><center><b><a href="https://twitter.com/N_Waters89/status/1267090303867125766">Twitter Link</a></b></center></div>`)[0];
+            popup_961a053f415f46adbb7560865eaecffe.setContent(html_7741a40aaf7840e7a6a30624380c4c2c);
+        
+
+        marker_0abb791bda4f448b85c25a5abfaec950.bindPopup(popup_961a053f415f46adbb7560865eaecffe)
+        ;
+
+        
+    
+    
+            var marker_7277803473174005b6403bd24adaaf8c = L.marker(
+                [34.076107, -118.35584],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_4de40c8febac4488a1529f25f7dfe73a = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_7277803473174005b6403bd24adaaf8c.setIcon(custom_icon_4de40c8febac4488a1529f25f7dfe73a);
+        
+    
+        var popup_efff2bcf5b6a44d69089b4f03733b7a4 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_5bcf0dcf6e634f9b9a0adf4b55f8d051 = $(`<div id="html_5bcf0dcf6e634f9b9a0adf4b55f8d051" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05 06:29 PDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Iz Sinistra<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>nan<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Former Marine in LA who was documenting the protests was shot in the head by a less lethal round. As a result he has a bleed on the brain. <br><br><center><b><a href="https://twitter.com/N_Waters89/status/1267093271903457282">Twitter Link</a></b></center></div>`)[0];
+            popup_efff2bcf5b6a44d69089b4f03733b7a4.setContent(html_5bcf0dcf6e634f9b9a0adf4b55f8d051);
+        
+
+        marker_7277803473174005b6403bd24adaaf8c.bindPopup(popup_efff2bcf5b6a44d69089b4f03733b7a4)
+        ;
+
+        
+    
+    
+            var marker_76380e67c8b84677a37b16f82fe649e9 = L.marker(
+                [44.94782, -93.27759],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_7ed746860e72451e83b1ceeb4dd0a5ea = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/zuGyJRR.png"});
+        marker_76380e67c8b84677a37b16f82fe649e9.setIcon(custom_icon_7ed746860e72451e83b1ceeb4dd0a5ea);
+        
+    
+        var popup_787d50e8be554009a6500c5b655a3a9a = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_d28bbafcd42145b1a8c2b79ca45caa8c = $(`<div id="html_d28bbafcd42145b1a8c2b79ca45caa8c" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05/2020 08:54 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>International Press<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>The Independent<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was targeted with a less lethal round. <br><br><center><b><a href="https://twitter.com/AndrewBuncombe/status/1266911003356381184">Twitter Link</a></b></center></div>`)[0];
+            popup_787d50e8be554009a6500c5b655a3a9a.setContent(html_d28bbafcd42145b1a8c2b79ca45caa8c);
+        
+
+        marker_76380e67c8b84677a37b16f82fe649e9.bindPopup(popup_787d50e8be554009a6500c5b655a3a9a)
+        ;
+
+        
+    
+    
+            var marker_df6a2e85f535464e9f2797d2c192fd69 = L.marker(
+                [44.94852, -93.23458],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_42a0eef3ccf8422aa54d3c377611a43a = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_df6a2e85f535464e9f2797d2c192fd69.setIcon(custom_icon_42a0eef3ccf8422aa54d3c377611a43a);
+        
+    
+        var popup_d76e70b56dab46959c9b7d7730a3e631 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_fb9164aa4dd34d3191caf9f942666795 = $(`<div id="html_fb9164aa4dd34d3191caf9f942666795" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>27/05/2020 23:32:00 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Max Nesterak<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Minnesota Reformer<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was hit in the chest with a rubber bullet.<br><br><center><b><a href="https://twitter.com/maxnesterak/status/1265863514754813952">Twitter Link</a></b></center></div>`)[0];
+            popup_d76e70b56dab46959c9b7d7730a3e631.setContent(html_fb9164aa4dd34d3191caf9f942666795);
+        
+
+        marker_df6a2e85f535464e9f2797d2c192fd69.bindPopup(popup_d76e70b56dab46959c9b7d7730a3e631)
+        ;
+
+        
+    
+    
+            var marker_90e655addf3e4f77a60b86de008d4b05 = L.marker(
+                [44.94792, -93.23615],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_9b22f0d17d044dde82cba2a134440062 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_90e655addf3e4f77a60b86de008d4b05.setIcon(custom_icon_9b22f0d17d044dde82cba2a134440062);
+        
+    
+        var popup_3f6d92a39069493fac394acb4789fbe9 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_20bb9a3442c6479ba01149726455a88f = $(`<div id="html_20bb9a3442c6479ba01149726455a88f" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>26/05/2020, 20:46 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Andy Mannix<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Star Tribune<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Mannix was hit in the leg with a less-lethal projectile.<br><br><center><b><a href="https://twitter.com/AndrewMannix/status/1265756101057957890">Twitter Link</a></b></center></div>`)[0];
+            popup_3f6d92a39069493fac394acb4789fbe9.setContent(html_20bb9a3442c6479ba01149726455a88f);
+        
+
+        marker_90e655addf3e4f77a60b86de008d4b05.bindPopup(popup_3f6d92a39069493fac394acb4789fbe9)
+        ;
+
+        
+    
+    
+            var marker_7edc63ec35694e5c996f664916a7b332 = L.marker(
+                [34.076107, -118.35584],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_3110a86e102d44689276e83a92d34d06 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_7edc63ec35694e5c996f664916a7b332.setIcon(custom_icon_3110a86e102d44689276e83a92d34d06);
+        
+    
+        var popup_278604ce7d104c779ce5b82c296a0ae5 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_e44cbcc22aef4e5d94fa7756d7da305a = $(`<div id="html_e44cbcc22aef4e5d94fa7756d7da305a" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>29/05/2020 19:40 PDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Tina Desiree Berg<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Status Coup<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Police shot out the back window of Berg's car. She claims she had her press credentials visible. <br><br><center><b><a href="https://twitter.com/TinaDesireeBerg/status/1266922413591105536">Twitter Link</a></b></center></div>`)[0];
+            popup_278604ce7d104c779ce5b82c296a0ae5.setContent(html_e44cbcc22aef4e5d94fa7756d7da305a);
+        
+
+        marker_7edc63ec35694e5c996f664916a7b332.bindPopup(popup_278604ce7d104c779ce5b82c296a0ae5)
+        ;
+
+        
+    
+    
+            var marker_fc9df7a8f98b422fbf360890df6ee8fb = L.marker(
+                [39.73947, -104.98619],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_71411fc9057e4584bf8e8f575d6182e7 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_fc9df7a8f98b422fbf360890df6ee8fb.setIcon(custom_icon_71411fc9057e4584bf8e8f575d6182e7);
+        
+    
+        var popup_45cff28ef8af47a696a9478a4bc904e5 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_17d1db00549c43b5be683c08ec643f12 = $(`<div id="html_17d1db00549c43b5be683c08ec643f12" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020 22:12 MDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Jeremy Jojola<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>9NEWS<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Jojola was hit in the back with a projectile shortly after he went live on air. His cameraman had a camera and light on when he was shot.<br><br><center><b><a href="https://twitter.com/jeremyjojola/status/1266945562957484032">Twitter Link</a></b></center></div>`)[0];
+            popup_45cff28ef8af47a696a9478a4bc904e5.setContent(html_17d1db00549c43b5be683c08ec643f12);
+        
+
+        marker_fc9df7a8f98b422fbf360890df6ee8fb.bindPopup(popup_45cff28ef8af47a696a9478a4bc904e5)
+        ;
+
+        
+    
+    
+            var marker_2e25bad42f444372a1c68542201333ea = L.marker(
+                [39.73843, -104.98614],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_f8012369fb3848029a9eb549c3f47721 = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.imgur.com/nsmJ9Mb.png"});
+        marker_2e25bad42f444372a1c68542201333ea.setIcon(custom_icon_f8012369fb3848029a9eb549c3f47721);
+        
+    
+        var popup_bf921c511c7440ae9c74dbce06f813e9 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_40774439f7ae4b938f3dd2507ba1d51b = $(`<div id="html_40774439f7ae4b938f3dd2507ba1d51b" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05/2020 10:19 MDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>David Sachs<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>CPR News<br><h1 style="font-size:13px;"><b>Description</b>:</h1>A police officer shoved Sachs after he showed him his press pass. The police then deployed tear gas and Sachs was caught up in the cloud.<br><br><center><b><a href="https://twitter.com/DavidASachs/status/1266920122893156353">Twitter Link</a></b></center></div>`)[0];
+            popup_bf921c511c7440ae9c74dbce06f813e9.setContent(html_40774439f7ae4b938f3dd2507ba1d51b);
+        
+
+        marker_2e25bad42f444372a1c68542201333ea.bindPopup(popup_bf921c511c7440ae9c74dbce06f813e9)
+        ;
+
+        
+    
+    
+            var marker_971f951bf2284f6e995c3f4a128f7864 = L.marker(
+                [44.945058, -93.277736],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_fceb7b0d7ed645e184a26f6fff263ed3 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/zuGyJRR.png"});
+        marker_971f951bf2284f6e995c3f4a128f7864.setIcon(custom_icon_fceb7b0d7ed645e184a26f6fff263ed3);
+        
+    
+        var popup_805ebee4cbfa4ffdaab773835f1aef19 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_df3599bda27746909f4ecb4e8685e6a1 = $(`<div id="html_df3599bda27746909f4ecb4e8685e6a1" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020 20:40 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Phil Leblanc<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Radio-Canada<br><h1 style="font-size:13px;"><b>Description</b>:</h1>A group of police officers shove Leblanc.<br><br><center><b><a href="https://twitter.com/phil_leblancSRC/status/1266907398003924992">Twitter Link</a></b></center></div>`)[0];
+            popup_805ebee4cbfa4ffdaab773835f1aef19.setContent(html_df3599bda27746909f4ecb4e8685e6a1);
+        
+
+        marker_971f951bf2284f6e995c3f4a128f7864.bindPopup(popup_805ebee4cbfa4ffdaab773835f1aef19)
+        ;
+
+        
+    
+    
+            var marker_331a835714ec4b669e5d02aea55aecb5 = L.marker(
+                [36.167779, -115.137286],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_9478c74718e8489abc039c56dc424012 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_331a835714ec4b669e5d02aea55aecb5.setIcon(custom_icon_9478c74718e8489abc039c56dc424012);
+        
+    
+        var popup_872b1511636f4b25be2de408ced0e087 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_60a9887aa6c342489559c32a8bf28f69 = $(`<div id="html_60a9887aa6c342489559c32a8bf28f69" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020 23:14 PDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Rio Lacanlale / Kevin Cannon<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Las Vegas Review Journal<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Police fired pepper pellets at Lacanlale and Cannon while they were standing on the sidewalk.<br><br><center><b><a href="https://twitter.com/riolacanlale/status/1266976276968992768">Twitter Link</a></b></center></div>`)[0];
+            popup_872b1511636f4b25be2de408ced0e087.setContent(html_60a9887aa6c342489559c32a8bf28f69);
+        
+
+        marker_331a835714ec4b669e5d02aea55aecb5.bindPopup(popup_872b1511636f4b25be2de408ced0e087)
+        ;
+
+        
+    
+    
+            var marker_77a55b2d7b7d4b20887040f10192e269 = L.marker(
+                [39.041205, -94.588925],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_54bca19431d947eb8f5b1d371f6aa11b = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_77a55b2d7b7d4b20887040f10192e269.setIcon(custom_icon_54bca19431d947eb8f5b1d371f6aa11b);
+        
+    
+        var popup_697ed9a70dd74cd090e579ad8a373c11 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_9100b17bcf4b4b5e83acf1c3ac56330c = $(`<div id="html_9100b17bcf4b4b5e83acf1c3ac56330c" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05/2020 00:00 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>McKenzie Nelson / Darrius Smith / Scott Winkler<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>41 Action News<br><h1 style="font-size:13px;"><b>Description</b>:</h1>The crew was hit by tear gas.<br><br><center><b><a href="https://twitter.com/McKenzieMNelson/status/1266957797268357120">Twitter Link</a></b></center></div>`)[0];
+            popup_697ed9a70dd74cd090e579ad8a373c11.setContent(html_9100b17bcf4b4b5e83acf1c3ac56330c);
+        
+
+        marker_77a55b2d7b7d4b20887040f10192e269.bindPopup(popup_697ed9a70dd74cd090e579ad8a373c11)
+        ;
+
+        
+    
+    
+            var marker_5785ac4ad1ca441d908bd2fad50aa882 = L.marker(
+                [44.94674, -93.277921],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_330f713913b0460ca8e05d4f9536b3df = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_5785ac4ad1ca441d908bd2fad50aa882.setIcon(custom_icon_330f713913b0460ca8e05d4f9536b3df);
+        
+    
+        var popup_5c556f4e275d40038f62dd29eed90b03 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_30c087b3fd0a41729aca0048a550cb4f = $(`<div id="html_30c087b3fd0a41729aca0048a550cb4f" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020 21:29 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Susan Ormiston<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>CBC News<br><h1 style="font-size:13px;"><b>Description</b>:</h1>The correspondent was hit by a rubber bullet.<br><br><center><b><a href="https://twitter.com/NatashaFatah/status/1266919824556535808?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_5c556f4e275d40038f62dd29eed90b03.setContent(html_30c087b3fd0a41729aca0048a550cb4f);
+        
+
+        marker_5785ac4ad1ca441d908bd2fad50aa882.bindPopup(popup_5c556f4e275d40038f62dd29eed90b03)
+        ;
+
+        
+    
+    
+            var marker_efd4df93ce874a7c8e742502945d242f = L.marker(
+                [39.953579, -75.163259],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_da44e54361bb4092be5361cd0cdc44e9 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_efd4df93ce874a7c8e742502945d242f.setIcon(custom_icon_da44e54361bb4092be5361cd0cdc44e9);
+        
+    
+        var popup_8a54de0b2c954e9697d049de713f92b4 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_870048216e29464ab4ad54596024adc0 = $(`<div id="html_870048216e29464ab4ad54596024adc0" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020 22:28 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Sam Trilling<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Investigate Midwest<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Photojournalist was hit by a baton.<br><br><center><b><a href="https://twitter.com/SamInPrint/status/1266919513666265088?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_8a54de0b2c954e9697d049de713f92b4.setContent(html_870048216e29464ab4ad54596024adc0);
+        
+
+        marker_efd4df93ce874a7c8e742502945d242f.bindPopup(popup_8a54de0b2c954e9697d049de713f92b4)
+        ;
+
+        
+    
+    
+            var marker_fbe823931f8246429a473ed1b8485368 = L.marker(
+                [36.117644, -115.173091],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_d938bd403c8847928bfb314c179a5070 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/5uNPdy2.png"});
+        marker_fbe823931f8246429a473ed1b8485368.setIcon(custom_icon_d938bd403c8847928bfb314c179a5070);
+        
+    
+        var popup_6dec209efe4645a498c39e77f716c469 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_bde066996f424b7581eb02018d95deae = $(`<div id="html_bde066996f424b7581eb02018d95deae" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>29/05/2020 22:06 PDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Ellen Schmidt and Bridget Bennet<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Las Vega Review<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Photojournalists was arrested while documenting the protest.<br><br><center><b><a href="https://twitter.com/rickytwrites/status/1266596766021038080?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_6dec209efe4645a498c39e77f716c469.setContent(html_bde066996f424b7581eb02018d95deae);
+        
+
+        marker_fbe823931f8246429a473ed1b8485368.bindPopup(popup_6dec209efe4645a498c39e77f716c469)
+        ;
+
+        
+    
+    
+            var marker_b7e3c58f7f6147e683c993d8dd0c0ad5 = L.marker(
+                [35.776782, -78.63928],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_7e9221457e514d4ab4948dc03fcc76b1 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_b7e3c58f7f6147e683c993d8dd0c0ad5.setIcon(custom_icon_7e9221457e514d4ab4948dc03fcc76b1);
+        
+    
+        var popup_b8c90dd734524d07bb72c2907b9e6d87 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_4b10986d7cdb4981b4ba83873bce9933 = $(`<div id="html_4b10986d7cdb4981b4ba83873bce9933" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020 21:35 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Charlie McGee<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>-----<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Journalist has tear gas fired at him.<br><br><center><b><a href="https://twitter.com/bycharliemcgee/status/1266906032539930624?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_b8c90dd734524d07bb72c2907b9e6d87.setContent(html_4b10986d7cdb4981b4ba83873bce9933);
+        
+
+        marker_b7e3c58f7f6147e683c993d8dd0c0ad5.bindPopup(popup_b8c90dd734524d07bb72c2907b9e6d87)
+        ;
+
+        
+    
+    
+            var marker_ee806e93bf464370b29331acc3be7701 = L.marker(
+                [44.947897, -93.233858],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_3a058f9f9a3b471d8ee763890a6bf0c7 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/zuGyJRR.png"});
+        marker_ee806e93bf464370b29331acc3be7701.setIcon(custom_icon_3a058f9f9a3b471d8ee763890a6bf0c7);
+        
+    
+        var popup_c6c0e2cc14204ff389d849434d4c13bf = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_4ed6d13aefe84bfda17d68920f4056e0 = $(`<div id="html_4ed6d13aefe84bfda17d68920f4056e0" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>29/05/2020 20:09 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Micah Grimes<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>MSNBC<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Journalist targeted with the canister of a less lethal round.<br><br><center><b><a href="https://twitter.com/MicahGrimes/status/1266537250998956032?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_c6c0e2cc14204ff389d849434d4c13bf.setContent(html_4ed6d13aefe84bfda17d68920f4056e0);
+        
+
+        marker_ee806e93bf464370b29331acc3be7701.bindPopup(popup_c6c0e2cc14204ff389d849434d4c13bf)
+        ;
+
+        
+    
+    
+            var marker_fa6ca4847b27402481ad3d9cb44307a9 = L.marker(
+                [39.95119, -75.16558],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_050806c8542c4758bdf9cb4adbc93d87 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/5uNPdy2.png"});
+        marker_fa6ca4847b27402481ad3d9cb44307a9.setIcon(custom_icon_050806c8542c4758bdf9cb4adbc93d87);
+        
+    
+        var popup_56d86cb4e7974a90ade0fcb79553f34f = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_982ff6ddaac64e0da98902f2956ef8d1 = $(`<div id="html_982ff6ddaac64e0da98902f2956ef8d1" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020 22:04 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Jenn Schreiter / Niko Georgiades<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Unicorn Riot Ninja<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Journalist is threatened and told to leave the scene of an arrest even after identifying himself as press.<br><br><center><b><a href="https://twitter.com/UR_Ninja/status/1266913490301792257?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_56d86cb4e7974a90ade0fcb79553f34f.setContent(html_982ff6ddaac64e0da98902f2956ef8d1);
+        
+
+        marker_fa6ca4847b27402481ad3d9cb44307a9.bindPopup(popup_56d86cb4e7974a90ade0fcb79553f34f)
+        ;
+
+        
+    
+    
+            var marker_1b7bfab17392483caa1d95c3209b81dc = L.marker(
+                [44.948351, -93.277642],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_94b7ebd1c2b9440d871deb25fc61f7b7 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/zuGyJRR.png"});
+        marker_1b7bfab17392483caa1d95c3209b81dc.setIcon(custom_icon_94b7ebd1c2b9440d871deb25fc61f7b7);
+        
+    
+        var popup_119eb56a697b40fba22d36a0701d0b14 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_82062c392a3c41d78c30ae4d8755bd64 = $(`<div id="html_82062c392a3c41d78c30ae4d8755bd64" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020 21:18 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Chris Serres<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Star Tribune<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Journalist threatened with a firearm after identifying himself as a journalist.<br><br><center><b><a href="https://twitter.com/ChrisSerres/status/1267098060938776581?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_119eb56a697b40fba22d36a0701d0b14.setContent(html_82062c392a3c41d78c30ae4d8755bd64);
+        
+
+        marker_1b7bfab17392483caa1d95c3209b81dc.bindPopup(popup_119eb56a697b40fba22d36a0701d0b14)
+        ;
+
+        
+    
+    
+            var marker_81262251299b4b818e1894a21d4587bb = L.marker(
+                [37.806014, -122.270436],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_30db4d16bc2a4158b1ee95a717ac8496 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_81262251299b4b818e1894a21d4587bb.setIcon(custom_icon_30db4d16bc2a4158b1ee95a717ac8496);
+        
+    
+        var popup_59d4a747d7f64fcfaa3bc3dd03ed1929 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_e33bdad028054e509616c427d376cb02 = $(`<div id="html_e33bdad028054e509616c427d376cb02" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020 23:32 PDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Sarah Lin<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Freelancer?<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Photo journalist hit with a less lethal round.<br><br><center><b><a href="https://twitter.com/SarahBelleLin/status/1266980899301683200">Twitter Link</a></b></center></div>`)[0];
+            popup_59d4a747d7f64fcfaa3bc3dd03ed1929.setContent(html_e33bdad028054e509616c427d376cb02);
+        
+
+        marker_81262251299b4b818e1894a21d4587bb.bindPopup(popup_59d4a747d7f64fcfaa3bc3dd03ed1929)
+        ;
+
+        
+    
+    
+            var marker_95578b4242894a29a164a3243e34e10c = L.marker(
+                [39.949768, -75.149114],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_29bf9903d36d4e39926b908a556c41c8 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/5uNPdy2.png"});
+        marker_95578b4242894a29a164a3243e34e10c.setIcon(custom_icon_29bf9903d36d4e39926b908a556c41c8);
+        
+    
+        var popup_62c3ca55550e4ae1bca07b370abb8728 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_81d9dfe3301d4dae942dde13ea4efd6e = $(`<div id="html_81d9dfe3301d4dae942dde13ea4efd6e" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05/2020 19:00 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Avi Wolfman-Arent<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>WHYY News<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Journalist arrested even with press credentials.<br><br><center><b><a href="https://twitter.com/Avi_WA/status/1267229543166889985">Twitter Link</a></b></center></div>`)[0];
+            popup_62c3ca55550e4ae1bca07b370abb8728.setContent(html_81d9dfe3301d4dae942dde13ea4efd6e);
+        
+
+        marker_95578b4242894a29a164a3243e34e10c.bindPopup(popup_62c3ca55550e4ae1bca07b370abb8728)
+        ;
+
+        
+    
+    
+            var marker_73380785ffd44495a900ea11f9108037 = L.marker(
+                [33.770537, -118.192402],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_c560532b52fa4720b2e707332c3fc13d = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_73380785ffd44495a900ea11f9108037.setIcon(custom_icon_c560532b52fa4720b2e707332c3fc13d);
+        
+    
+        var popup_fa9c498b0d8945609979e17c75447a65 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_ffc36495cf954bc291ae4ff270cba30c = $(`<div id="html_ffc36495cf954bc291ae4ff270cba30c" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05/2020 18:40 PDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Adolfo Guzmna-Lopez<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>KPCC<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Journalist shot in the throat with rubber bullet shortly after interviewing someone.<br><br><center><b><a href="https://twitter.com/AGuzmanLopez/status/1267269781805137920">Twitter Link</a></b></center></div>`)[0];
+            popup_fa9c498b0d8945609979e17c75447a65.setContent(html_ffc36495cf954bc291ae4ff270cba30c);
+        
+
+        marker_73380785ffd44495a900ea11f9108037.bindPopup(popup_fa9c498b0d8945609979e17c75447a65)
+        ;
+
+        
+    
+    
+            var marker_8753fbae045a44d9877318e812aeaa39 = L.marker(
+                [38.900186, -77.0360547],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_98dcc387954447b792c69f0fe9187a81 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/zuGyJRR.png"});
+        marker_8753fbae045a44d9877318e812aeaa39.setIcon(custom_icon_98dcc387954447b792c69f0fe9187a81);
+        
+    
+        var popup_c54248e06fd14c308dd6d4fd74cfcbde = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_2728d2eafee248598caab24ed69c7d57 = $(`<div id="html_2728d2eafee248598caab24ed69c7d57" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>01/06/2020 00:58 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Peter Murtaugh<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>BBC<br><h1 style="font-size:13px;"><b>Description</b>:</h1>BBC crew charged and attacked by police officers.<br><br><center><b><a href="https://twitter.com/AleemMaqbool/status/1267319521486004225">Twitter Link</a></b></center></div>`)[0];
+            popup_c54248e06fd14c308dd6d4fd74cfcbde.setContent(html_2728d2eafee248598caab24ed69c7d57);
+        
+
+        marker_8753fbae045a44d9877318e812aeaa39.bindPopup(popup_c54248e06fd14c308dd6d4fd74cfcbde)
+        ;
+
+        
+    
+    
+            var marker_f419af8c9aa847a8b068043b6d806dc7 = L.marker(
+                [38.902671, -77.036576],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_6665dbdb16dc4b979bd196b63a5b5b87 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_f419af8c9aa847a8b068043b6d806dc7.setIcon(custom_icon_6665dbdb16dc4b979bd196b63a5b5b87);
+        
+    
+        var popup_9ebbb2e7eb9143e2a3d4ffccb8f1b28b = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_4f49aa9f5a304b4f94daaa6cd7288863 = $(`<div id="html_4f49aa9f5a304b4f94daaa6cd7288863" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05/2020 23:17 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Garrett Haake<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>MSNBC<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter and crew hit by rubber bullets.<br><br><center><b><a href="https://twitter.com/MSNBC/status/1267294124123750402">Twitter Link</a></b></center></div>`)[0];
+            popup_9ebbb2e7eb9143e2a3d4ffccb8f1b28b.setContent(html_4f49aa9f5a304b4f94daaa6cd7288863);
+        
+
+        marker_f419af8c9aa847a8b068043b6d806dc7.bindPopup(popup_9ebbb2e7eb9143e2a3d4ffccb8f1b28b)
+        ;
+
+        
+    
+    
+            var marker_4e1ad0a4427b4b16aae6b687a499125d = L.marker(
+                [44.9457, -93.277929],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_adf23de631754a75ac879c633b3ca4f8 = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.imgur.com/nsmJ9Mb.png"});
+        marker_4e1ad0a4427b4b16aae6b687a499125d.setIcon(custom_icon_adf23de631754a75ac879c633b3ca4f8);
+        
+    
+        var popup_4439558fe87b4478aa787a06a632870a = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_8f239e6c2f8c489c84d232648cfc8759 = $(`<div id="html_8f239e6c2f8c489c84d232648cfc8759" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>1/6/2020, 03:55 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>KSTP crew<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>KSTP<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Crew was tear gassed and pepper sprayed.<br><br><center><b><a href="https://twitter.com/Wiita_BEST/status/1267128694616752130">Twitter Link</a></b></center></div>`)[0];
+            popup_4439558fe87b4478aa787a06a632870a.setContent(html_8f239e6c2f8c489c84d232648cfc8759);
+        
+
+        marker_4e1ad0a4427b4b16aae6b687a499125d.bindPopup(popup_4439558fe87b4478aa787a06a632870a)
+        ;
+
+        
+    
+    
+            var marker_51fead7964cc47e9a5315bee736794c9 = L.marker(
+                [41.631475, -93.701166],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_5caf28e2f4704bea8db924ced743c206 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/5uNPdy2.png"});
+        marker_51fead7964cc47e9a5315bee736794c9.setIcon(custom_icon_5caf28e2f4704bea8db924ced743c206);
+        
+    
+        var popup_a48d0f98a3f443c6a309b714a9f77dc1 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_3fd5a4a66d5a4e8caad9f625a1db497e = $(`<div id="html_3fd5a4a66d5a4e8caad9f625a1db497e" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05/2020 11:19 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Andrea May Sahouri<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Des Moines Register<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Photo journalist pepper-sprayed and arrested by police.<br><br><center><b><a href="https://twitter.com/RachelSB/status/1267260438900867074">Twitter Link</a></b></center></div>`)[0];
+            popup_a48d0f98a3f443c6a309b714a9f77dc1.setContent(html_3fd5a4a66d5a4e8caad9f625a1db497e);
+        
+
+        marker_51fead7964cc47e9a5315bee736794c9.bindPopup(popup_a48d0f98a3f443c6a309b714a9f77dc1)
+        ;
+
+        
+    
+    
+            var marker_8d7077190d984be38484e975a9f398a0 = L.marker(
+                [38.90027, -77.036549],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_d4b11b7e6faa4cd38a9d349270887b1a = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/zuGyJRR.png"});
+        marker_8d7077190d984be38484e975a9f398a0.setIcon(custom_icon_d4b11b7e6faa4cd38a9d349270887b1a);
+        
+    
+        var popup_22c1f6c7e601436b8226a6c90ed1a96c = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_5262aec804ea410aa010932a8005badd = $(`<div id="html_5262aec804ea410aa010932a8005badd" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05/2020 22:59 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>-----<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>CNN<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Police struck CNN cameraman with baton.<br><br><center><b><a href="https://twitter.com/johnmdonnelly/status/1267289579087900672">Twitter Link</a></b></center></div>`)[0];
+            popup_22c1f6c7e601436b8226a6c90ed1a96c.setContent(html_5262aec804ea410aa010932a8005badd);
+        
+
+        marker_8d7077190d984be38484e975a9f398a0.bindPopup(popup_22c1f6c7e601436b8226a6c90ed1a96c)
+        ;
+
+        
+    
+    
+            var marker_fb209d23f8d046c290a6c3d4bc03f456 = L.marker(
+                [38.900236, -77.000591],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_f07120a4d2fe4626b0388c82c82112fe = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/zuGyJRR.png"});
+        marker_fb209d23f8d046c290a6c3d4bc03f456.setIcon(custom_icon_f07120a4d2fe4626b0388c82c82112fe);
+        
+    
+        var popup_c74a2888ca8c4cb98411e45a721886f6 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_0082fcee06fe461aa375ea14f8130fd9 = $(`<div id="html_0082fcee06fe461aa375ea14f8130fd9" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05/2020 22:54 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Matthew Rodier<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>SipaUSA<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Journalist was shoved to the ground by police officers.<br><br><center><b><a href="https://twitter.com/mattrodierphot1/status/1267287939966533634">Twitter Link</a></b></center></div>`)[0];
+            popup_c74a2888ca8c4cb98411e45a721886f6.setContent(html_0082fcee06fe461aa375ea14f8130fd9);
+        
+
+        marker_fb209d23f8d046c290a6c3d4bc03f456.bindPopup(popup_c74a2888ca8c4cb98411e45a721886f6)
+        ;
+
+        
+    
+    
+            var marker_fcbc2b2147814fb890f7b378e3b72154 = L.marker(
+                [37.54019, -77.432837],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_5ae853c1b7254be08a7457500eed7bc1 = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.imgur.com/nsmJ9Mb.png"});
+        marker_fcbc2b2147814fb890f7b378e3b72154.setIcon(custom_icon_5ae853c1b7254be08a7457500eed7bc1);
+        
+    
+        var popup_c4f1d4313f024f738991d596c0dd8a35 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_5c22a064319642daa05ea386be80f4e7 = $(`<div id="html_5c22a064319642daa05ea386be80f4e7" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05/2020 21:18 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Roberto Roldan<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>VPM<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was pepper sprayed in the face and shoved to the ground.<br><br><center><b><a href="https://twitter.com/ByRobertoR/status/1267264167314182144">Twitter Link</a></b></center></div>`)[0];
+            popup_c4f1d4313f024f738991d596c0dd8a35.setContent(html_5c22a064319642daa05ea386be80f4e7);
+        
+
+        marker_fcbc2b2147814fb890f7b378e3b72154.bindPopup(popup_c4f1d4313f024f738991d596c0dd8a35)
+        ;
+
+        
+    
+    
+            var marker_6afdfac3a9724423bbd517d29539abdb = L.marker(
+                [39.959741, -83.000085],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_6d810015c81840839473f9d1eb0685c2 = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.imgur.com/nsmJ9Mb.png"});
+        marker_6afdfac3a9724423bbd517d29539abdb.setIcon(custom_icon_6d810015c81840839473f9d1eb0685c2);
+        
+    
+        var popup_3108d3c512d74e5d802b3229974a7c47 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_3c64f3f55345455ebc6b079cbda8acf1 = $(`<div id="html_3c64f3f55345455ebc6b079cbda8acf1" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020 09:58 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Julia Lerner<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Independent (?)<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Journalist was pepper sprayed 3 times.<br><br><center><b><a href="https://twitter.com/julialwashere/status/1266730657436315649">Twitter Link</a></b></center></div>`)[0];
+            popup_3108d3c512d74e5d802b3229974a7c47.setContent(html_3c64f3f55345455ebc6b079cbda8acf1);
+        
+
+        marker_6afdfac3a9724423bbd517d29539abdb.bindPopup(popup_3108d3c512d74e5d802b3229974a7c47)
+        ;
+
+        
+    
+    
+            var marker_8d3ad49340aa4fa2a154601c935d2a10 = L.marker(
+                [34.045154, -118.264181],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_201fdd5437e148388ccfdeeabebb570a = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/5uNPdy2.png"});
+        marker_8d3ad49340aa4fa2a154601c935d2a10.setIcon(custom_icon_201fdd5437e148388ccfdeeabebb570a);
+        
+    
+        var popup_c32c1fc7b282423b8b10c13e7c2da64d = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_6f7122c73559491390fbd05b5d8667bf = $(`<div id="html_6f7122c73559491390fbd05b5d8667bf" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05/2020 13:07 PDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Aaron Cantu<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Independent (?)<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Journalist was arrested.<br><br><center><b><a href="https://twitter.com/aaron_con_choco/status/1267185920995807233">Twitter Link</a></b></center></div>`)[0];
+            popup_c32c1fc7b282423b8b10c13e7c2da64d.setContent(html_6f7122c73559491390fbd05b5d8667bf);
+        
+
+        marker_8d3ad49340aa4fa2a154601c935d2a10.bindPopup(popup_c32c1fc7b282423b8b10c13e7c2da64d)
+        ;
+
+        
+    
+    
+            var marker_af2ebcee769c47c6be6e4905a0203dfd = L.marker(
+                [37.782765, -122.406565],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_a5f6c175731a4d64826ee2837ea1c719 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/zuGyJRR.png"});
+        marker_af2ebcee769c47c6be6e4905a0203dfd.setIcon(custom_icon_a5f6c175731a4d64826ee2837ea1c719);
+        
+    
+        var popup_a250cb432d444ab6be5f59e467906c5e = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_4e1996e59b8744c796d688503e79ce55 = $(`<div id="html_4e1996e59b8744c796d688503e79ce55" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05/2020 22:34 PDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Leonardo Castaneda<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Mercnews<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Journalist was detained and zip tied even after identifying as press.<br><br><center><b><a href="https://twitter.com/LeoMCastaneda/status/1267328644218683392">Twitter Link</a></b></center></div>`)[0];
+            popup_a250cb432d444ab6be5f59e467906c5e.setContent(html_4e1996e59b8744c796d688503e79ce55);
+        
+
+        marker_af2ebcee769c47c6be6e4905a0203dfd.bindPopup(popup_a250cb432d444ab6be5f59e467906c5e)
+        ;
+
+        
+    
+    
+            var marker_119650f26caa4d74ad31a257c4fbfb14 = L.marker(
+                [37.33008, -121.881736],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_b0842120a4b14582a74665d2e8763c91 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/zuGyJRR.png"});
+        marker_119650f26caa4d74ad31a257c4fbfb14.setIcon(custom_icon_b0842120a4b14582a74665d2e8763c91);
+        
+    
+        var popup_bd2e2278f8ab44c98dee9ee169e13b00 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_3ee74ee20aff42f6baef830910588b68 = $(`<div id="html_3ee74ee20aff42f6baef830910588b68" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05/2020 21:37 PDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Maggie Angst<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Mercnews<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Journalists face was shoved to the ground by police officers and threatened with a baton.<br><br><center><b><a href="https://twitter.com/MaggieAngst/status/1267314275321704448">Twitter Link</a></b></center></div>`)[0];
+            popup_bd2e2278f8ab44c98dee9ee169e13b00.setContent(html_3ee74ee20aff42f6baef830910588b68);
+        
+
+        marker_119650f26caa4d74ad31a257c4fbfb14.bindPopup(popup_bd2e2278f8ab44c98dee9ee169e13b00)
+        ;
+
+        
+    
+    
+            var marker_20b8d3c03bfa4012ba306937019c3cdf = L.marker(
+                [44.948342, -93.288088],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_b413db5b4d604eb3a2ae55bc267aec01 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/5uNPdy2.png"});
+        marker_20b8d3c03bfa4012ba306937019c3cdf.setIcon(custom_icon_b413db5b4d604eb3a2ae55bc267aec01);
+        
+    
+        var popup_988e11d2d186417e9dc66d23b7404de3 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_227fbbbb6d3a412b9dee890cbcd600df = $(`<div id="html_227fbbbb6d3a412b9dee890cbcd600df" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>nan<br><h1 style="font-size:13px;"><b>Name</b>:</h1>-----<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Mill CItizen City Media<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Journalist was arrested while stating that she had press credentials.<br><br><center><b><a href="https://www.facebook.com/watch/live/?v=1000023607067899&ref=watch_permalink">Twitter Link</a></b></center></div>`)[0];
+            popup_988e11d2d186417e9dc66d23b7404de3.setContent(html_227fbbbb6d3a412b9dee890cbcd600df);
+        
+
+        marker_20b8d3c03bfa4012ba306937019c3cdf.bindPopup(popup_988e11d2d186417e9dc66d23b7404de3)
+        ;
+
+        
+    
+    
+            var marker_c021b3a6a9fb43699d427257199148be = L.marker(
+                [30.267709, -97.734367],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_e1789752917e4581b04901cc51de185b = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_c021b3a6a9fb43699d427257199148be.setIcon(custom_icon_e1789752917e4581b04901cc51de185b);
+        
+    
+        var popup_1f9b1cb874a34402b0a762fd370b8415 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_1e5a8007eb604451b435c772df269db7 = $(`<div id="html_1e5a8007eb604451b435c772df269db7" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05/2020, 16:06 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Kacey Bowen<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Fox 7 Austin<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was hit with tear gas.<br><br><center><b><a href="https://twitter.com/DestinyonFOX7/status/1267200704457949186?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_1f9b1cb874a34402b0a762fd370b8415.setContent(html_1e5a8007eb604451b435c772df269db7);
+        
+
+        marker_c021b3a6a9fb43699d427257199148be.bindPopup(popup_1f9b1cb874a34402b0a762fd370b8415)
+        ;
+
+        
+    
+    
+            var marker_47e0ef167a2445218a56590e15981495 = L.marker(
+                [40.440058, -79.998671],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_72856bbf325649fc8261e1be25e08395 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_47e0ef167a2445218a56590e15981495.setIcon(custom_icon_72856bbf325649fc8261e1be25e08395);
+        
+    
+        var popup_ca8d53b63a8a421d9c942c5c61319ac2 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_845725c31db14c0cbff75c69e8a43f6b = $(`<div id="html_845725c31db14c0cbff75c69e8a43f6b" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020, 18:57 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Bill O'Driscoll<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>90.5 WESA<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was hit by a rubber bullet.<br><br><center><b><a href="https://twitter.com/ODriscoll1bill/status/1266866373428420609">Twitter Link</a></b></center></div>`)[0];
+            popup_ca8d53b63a8a421d9c942c5c61319ac2.setContent(html_845725c31db14c0cbff75c69e8a43f6b);
+        
+
+        marker_47e0ef167a2445218a56590e15981495.bindPopup(popup_ca8d53b63a8a421d9c942c5c61319ac2)
+        ;
+
+        
+    
+    
+            var marker_995c8f14e56b49859150f0fdfd5bdcc7 = L.marker(
+                [40.68426, -73.977522],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_6deec25da44340babda730affaf5c88b = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_995c8f14e56b49859150f0fdfd5bdcc7.setIcon(custom_icon_6deec25da44340babda730affaf5c88b);
+        
+    
+        var popup_a0a3e0fcd52242c3a4e47bb60b3d6d9c = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_8c0afdc5a29849e093043df1b21b57dd = $(`<div id="html_8c0afdc5a29849e093043df1b21b57dd" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05/2020, 22:41 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Noah Goldberg<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>NY Daily News<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was hit with a baton.<br><br><center><b><a href="https://twitter.com/Noah__Goldberg/status/1267285022031130625?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_a0a3e0fcd52242c3a4e47bb60b3d6d9c.setContent(html_8c0afdc5a29849e093043df1b21b57dd);
+        
+
+        marker_995c8f14e56b49859150f0fdfd5bdcc7.bindPopup(popup_a0a3e0fcd52242c3a4e47bb60b3d6d9c)
+        ;
+
+        
+    
+    
+            var marker_c8ecaba5111d4f88a5cecfc03a069c29 = L.marker(
+                [34.076102, -118.358382],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_c2c7fc2fb2e5447a8a54e8abdd650f01 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_c8ecaba5111d4f88a5cecfc03a069c29.setIcon(custom_icon_c2c7fc2fb2e5447a8a54e8abdd650f01);
+        
+    
+        var popup_86244e2ce7044a54bb548445ee9c548e = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_bb4e26bbccf047b482b549e8860c12a1 = $(`<div id="html_bb4e26bbccf047b482b549e8860c12a1" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020, 17:25 PDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Samuel Braslow<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>LA Mag<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was hit by a rubber bullet.<br><br><center><b><a href="https://twitter.com/SamBraslow/status/1266888617936355328">Twitter Link</a></b></center></div>`)[0];
+            popup_86244e2ce7044a54bb548445ee9c548e.setContent(html_bb4e26bbccf047b482b549e8860c12a1);
+        
+
+        marker_c8ecaba5111d4f88a5cecfc03a069c29.bindPopup(popup_86244e2ce7044a54bb548445ee9c548e)
+        ;
+
+        
+    
+    
+            var marker_448e4b9c55144d62b11f7aa05d60b7da = L.marker(
+                [32.767531, -117.022706],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_e4259dcddb1f4c8fa9013360e775b828 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_448e4b9c55144d62b11f7aa05d60b7da.setIcon(custom_icon_e4259dcddb1f4c8fa9013360e775b828);
+        
+    
+        var popup_68ae6dec0146423a9d0a811e3bb713f7 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_2a82b17dc47e44ff94e15005d13b4d63 = $(`<div id="html_2a82b17dc47e44ff94e15005d13b4d63" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020, 21:17 PDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Andrew Dyer<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>San Diego Union-Tribune<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was hit by less lethal rounds and once identified as a journalist was told to get out of the way.<br><br><center><b><a href="https://twitter.com/SDUTdyer/status/1266946769117577216?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_68ae6dec0146423a9d0a811e3bb713f7.setContent(html_2a82b17dc47e44ff94e15005d13b4d63);
+        
+
+        marker_448e4b9c55144d62b11f7aa05d60b7da.bindPopup(popup_68ae6dec0146423a9d0a811e3bb713f7)
+        ;
+
+        
+    
+    
+            var marker_8ba75d6bb1cd4684a854a1581a61712d = L.marker(
+                [44.94665, -93.277958],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_657f96c3a7334a99bfeec2abe6765c2f = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/zuGyJRR.png"});
+        marker_8ba75d6bb1cd4684a854a1581a61712d.setIcon(custom_icon_657f96c3a7334a99bfeec2abe6765c2f);
+        
+    
+        var popup_932a6bdc96b443fcb68f2fe4a88ad384 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_b7b8e7e4b0654931a223a712f1b9d5c0 = $(`<div id="html_b7b8e7e4b0654931a223a712f1b9d5c0" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05/2020 00:06 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Chao Xiong<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Star Tribune <br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was told to leave despite showing press credentials.<br><br><center><b><a href="https://twitter.com/ChaoStrib/status/1266959110265856000?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_932a6bdc96b443fcb68f2fe4a88ad384.setContent(html_b7b8e7e4b0654931a223a712f1b9d5c0);
+        
+
+        marker_8ba75d6bb1cd4684a854a1581a61712d.bindPopup(popup_932a6bdc96b443fcb68f2fe4a88ad384)
+        ;
+
+        
+    
+    
+            var marker_1cdd49d4018d4c1183a0e08a9e6a7876 = L.marker(
+                [39.739226, -104.986216],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_69a1b569559b4655aff1cd018f48f6c5 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/zuGyJRR.png"});
+        marker_1cdd49d4018d4c1183a0e08a9e6a7876.setIcon(custom_icon_69a1b569559b4655aff1cd018f48f6c5);
+        
+    
+        var popup_2c5750e511304291bf1b7e38225a17a8 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_c05e43b049eb491c8d50f8f5e00493ce = $(`<div id="html_c05e43b049eb491c8d50f8f5e00493ce" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05/2020 22:57 MDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Alex Burness & Estaban Hernandez<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Denver Post<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Journalist was threated by a police officer with a weapon.<br><br><center><b><a href="https://twitter.com/alex_burness/status/1267319325846917120?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_2c5750e511304291bf1b7e38225a17a8.setContent(html_c05e43b049eb491c8d50f8f5e00493ce);
+        
+
+        marker_1cdd49d4018d4c1183a0e08a9e6a7876.bindPopup(popup_2c5750e511304291bf1b7e38225a17a8)
+        ;
+
+        
+    
+    
+            var marker_46df29a4c86145438d058fe3c85e8dd1 = L.marker(
+                [44.946954, -93.27793],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_2fef4f10e1b54db3bd19b9c9cd134824 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_46df29a4c86145438d058fe3c85e8dd1.setIcon(custom_icon_2fef4f10e1b54db3bd19b9c9cd134824);
+        
+    
+        var popup_c0de80deef4a4504bf9e3b267ab7b3ff = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_0264b5400f8543ecbde484980e5ff09f = $(`<div id="html_0264b5400f8543ecbde484980e5ff09f" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>nan<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Omar Jimenez<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>CNN<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Producer was hit by a teargas canister <br><br><center><b><a href="https://twitter.com/RockodileCroc/status/1266963861040553985">Twitter Link</a></b></center></div>`)[0];
+            popup_c0de80deef4a4504bf9e3b267ab7b3ff.setContent(html_0264b5400f8543ecbde484980e5ff09f);
+        
+
+        marker_46df29a4c86145438d058fe3c85e8dd1.bindPopup(popup_c0de80deef4a4504bf9e3b267ab7b3ff)
+        ;
+
+        
+    
+    
+            var marker_7be4fa7769b14ad6892b5d23d93290e4 = L.marker(
+                [44.044728, -123.079238],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_244fd0e277514a03ae759e01b0eb64db = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.imgur.com/nsmJ9Mb.png"});
+        marker_7be4fa7769b14ad6892b5d23d93290e4.setIcon(custom_icon_244fd0e277514a03ae759e01b0eb64db);
+        
+    
+        var popup_47f253dd57424e72b725e46da3035254 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_ab3411d9f1c54e0f8016827340429742 = $(`<div id="html_ab3411d9f1c54e0f8016827340429742" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>05/31/2020 23:15 PDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Henry Houston<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Eugene Weekly<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was teargassed.<br><br><center><b><a href="https://twitter.com/EugWklyCamilla/status/1267341246164463616">Twitter Link</a></b></center></div>`)[0];
+            popup_47f253dd57424e72b725e46da3035254.setContent(html_ab3411d9f1c54e0f8016827340429742);
+        
+
+        marker_7be4fa7769b14ad6892b5d23d93290e4.bindPopup(popup_47f253dd57424e72b725e46da3035254)
+        ;
+
+        
+    
+    
+            var marker_c5374dcba8ed4dec9d73c003816a9ae5 = L.marker(
+                [38.902011, -77.036538],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_b71b8e83fb054244a06e844c86299476 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_c5374dcba8ed4dec9d73c003816a9ae5.setIcon(custom_icon_b71b8e83fb054244a06e844c86299476);
+        
+    
+        var popup_c280b1865a7c423b9e70d883170e70df = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_0333ffb803c5479db0efb120830378f0 = $(`<div id="html_0333ffb803c5479db0efb120830378f0" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>05/31/2020 23:15 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Todd Zwillich<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Vice News <br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was shot in the head with a rubber bullet.<br><br><center><b><a href="https://twitter.com/toddzwillich/status/1267293699630866433">Twitter Link</a></b></center></div>`)[0];
+            popup_c280b1865a7c423b9e70d883170e70df.setContent(html_0333ffb803c5479db0efb120830378f0);
+        
+
+        marker_c5374dcba8ed4dec9d73c003816a9ae5.bindPopup(popup_c280b1865a7c423b9e70d883170e70df)
+        ;
+
+        
+    
+    
+            var marker_231dd2489e92458bbdb7d5b070198b6d = L.marker(
+                [42.330079, -83.05653],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_0c5ae2949c714c2884cb6a47dcc90385 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/zuGyJRR.png"});
+        marker_231dd2489e92458bbdb7d5b070198b6d.setIcon(custom_icon_0c5ae2949c714c2884cb6a47dcc90385);
+        
+    
+        var popup_c5500b62fbea42acb3c9e78d21f33131 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_88603b8533f24d939fa0be4ed7f587f1 = $(`<div id="html_88603b8533f24d939fa0be4ed7f587f1" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>05/31/2020 21:00 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Mark Kurlyandchik<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Detroit Free Press<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was charged by the police.<br><br><center><b><a href="https://twitter.com/MKurlyandchik/status/1267359959089586176">Twitter Link</a></b></center></div>`)[0];
+            popup_c5500b62fbea42acb3c9e78d21f33131.setContent(html_88603b8533f24d939fa0be4ed7f587f1);
+        
+
+        marker_231dd2489e92458bbdb7d5b070198b6d.bindPopup(popup_c5500b62fbea42acb3c9e78d21f33131)
+        ;
+
+        
+    
+    
+            var marker_0878ea5d76714e7faae81c78d149a071 = L.marker(
+                [44.97444, -93.247803],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_c2bf6c9601a849b28f8492ac0e31a5bc = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_0878ea5d76714e7faae81c78d149a071.setIcon(custom_icon_c2bf6c9601a849b28f8492ac0e31a5bc);
+        
+    
+        var popup_f55684b6824e422394a69c4e66536286 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_fd84897614eb44e1b0648d198e2e0015 = $(`<div id="html_fd84897614eb44e1b0648d198e2e0015" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>06/01/2020 06:44 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>nan<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>DW News<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporters shot with rubber bullets after clearly identifying themselves as press.<br><br><center><b><a href="https://twitter.com/dwnews/status/1267421669892784128">Twitter Link</a></b></center></div>`)[0];
+            popup_f55684b6824e422394a69c4e66536286.setContent(html_fd84897614eb44e1b0648d198e2e0015);
+        
+
+        marker_0878ea5d76714e7faae81c78d149a071.bindPopup(popup_f55684b6824e422394a69c4e66536286)
+        ;
+
+        
+    
+    
+            var marker_ae79f8e1a90541c4b795308f79879ed3 = L.marker(
+                [38.900198, -77.03616],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_606f167d76b9494682977d1c63d23636 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_ae79f8e1a90541c4b795308f79879ed3.setIcon(custom_icon_606f167d76b9494682977d1c63d23636);
+        
+    
+        var popup_ba1f46a1518b4a7eb1f33790e8d44114 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_95e44c6e21e649debd0305aff9af3a56 = $(`<div id="html_95e44c6e21e649debd0305aff9af3a56" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>06/01/2020 07:49 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Josh Replogle<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>CNN<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter tried to let the police pass by him, they pinned him to the wall and an officer hit his knee with a baton.<br><br><center><b><a href="https://twitter.com/Joshrepp/status/1267422952691294208">Twitter Link</a></b></center></div>`)[0];
+            popup_ba1f46a1518b4a7eb1f33790e8d44114.setContent(html_95e44c6e21e649debd0305aff9af3a56);
+        
+
+        marker_ae79f8e1a90541c4b795308f79879ed3.bindPopup(popup_ba1f46a1518b4a7eb1f33790e8d44114)
+        ;
+
+        
+    
+    
+            var marker_027bafee06dd4c56809dbf32f9cbc091 = L.marker(
+                [42.336723, -83.050693],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_ff68fc153bb248a194228009d77e1b7a = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/5uNPdy2.png"});
+        marker_027bafee06dd4c56809dbf32f9cbc091.setIcon(custom_icon_ff68fc153bb248a194228009d77e1b7a);
+        
+    
+        var popup_aa715e5d90da4db48c22a1232b8dd6ce = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_c22dfbd519d5442dbe9e354ad416739f = $(`<div id="html_c22dfbd519d5442dbe9e354ad416739f" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>05/31/2020 21:37 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Christine McDonald<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Detroit News<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was arrested even with her press badge on.<br><br><center><b><a href="https://twitter.com/JustCallmeBHunt/status/1267268955191853057">Twitter Link</a></b></center></div>`)[0];
+            popup_aa715e5d90da4db48c22a1232b8dd6ce.setContent(html_c22dfbd519d5442dbe9e354ad416739f);
+        
+
+        marker_027bafee06dd4c56809dbf32f9cbc091.bindPopup(popup_aa715e5d90da4db48c22a1232b8dd6ce)
+        ;
+
+        
+    
+    
+            var marker_e5e6e0a5b09147f8874e3a57f1d2b32b = L.marker(
+                [42.332297, -83.05774],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_64bfd20fb029475fa9abfd3d05c322dd = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_e5e6e0a5b09147f8874e3a57f1d2b32b.setIcon(custom_icon_64bfd20fb029475fa9abfd3d05c322dd);
+        
+    
+        var popup_88db029839d444b4aa359ed74ae6c7e4 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_017c20619a2a422abf56cd88bbd75485 = $(`<div id="html_017c20619a2a422abf56cd88bbd75485" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>05/31/2020 01:33 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>David Jesse<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Detroit Free Press<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was teargassed and shot at with rubber bullets.<br><br><center><b><a href="https://twitter.com/reporterdavidj/status/1266966021077962752">Twitter Link</a></b></center></div>`)[0];
+            popup_88db029839d444b4aa359ed74ae6c7e4.setContent(html_017c20619a2a422abf56cd88bbd75485);
+        
+
+        marker_e5e6e0a5b09147f8874e3a57f1d2b32b.bindPopup(popup_88db029839d444b4aa359ed74ae6c7e4)
+        ;
+
+        
+    
+    
+            var marker_1f8a08a2e6b040e38626703c90d7949c = L.marker(
+                [42.332722, -83.047712],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_62c1edd6e21540da9b131fde854633f8 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_1f8a08a2e6b040e38626703c90d7949c.setIcon(custom_icon_62c1edd6e21540da9b131fde854633f8);
+        
+    
+        var popup_04eed27e5331406594fa985dd2404688 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_497ad7d5b52b45c48574697a6bb3d39c = $(`<div id="html_497ad7d5b52b45c48574697a6bb3d39c" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>05/31/2020 23:51 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Branden Hunter<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Detroit Free Press<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was threatened by the police with rubber bullets and told to leave.<br><br><center><b><a href="https://twitter.com/JustCallmeBHunt/status/1266955368493711361">Twitter Link</a></b></center></div>`)[0];
+            popup_04eed27e5331406594fa985dd2404688.setContent(html_497ad7d5b52b45c48574697a6bb3d39c);
+        
+
+        marker_1f8a08a2e6b040e38626703c90d7949c.bindPopup(popup_04eed27e5331406594fa985dd2404688)
+        ;
+
+        
+    
+    
+            var marker_5aac71033ee4499e8ce4ee7ab9c7690b = L.marker(
+                [38.900127, -77.036227],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_6f496928ad9a409aa6eb4a3dd1a6d062 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_5aac71033ee4499e8ce4ee7ab9c7690b.setIcon(custom_icon_6f496928ad9a409aa6eb4a3dd1a6d062);
+        
+    
+        var popup_ffeeae2202f845b8824fe41398fff81e = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_4354abd8b99345f58f60fdb252b42d2a = $(`<div id="html_4354abd8b99345f58f60fdb252b42d2a" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>01/06/2020 19:32 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Amelia Brace <br><h1 style="font-size:13px;"><b>Organization</b>:</h1>7 News Sydney<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Camera man and reporter were shoved into a corner by police, then hit with batons when they tried to get away.<br><br><center><b><a href="https://twitter.com/ScottThuman/status/1267599965309763584?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_ffeeae2202f845b8824fe41398fff81e.setContent(html_4354abd8b99345f58f60fdb252b42d2a);
+        
+
+        marker_5aac71033ee4499e8ce4ee7ab9c7690b.bindPopup(popup_ffeeae2202f845b8824fe41398fff81e)
+        ;
+
+        
+    
+    
+            var marker_83d5e8e90cf14240838329a47e7b3e0b = L.marker(
+                [39.735153, -104.980656],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_7e0702ced4f74f7fbf1a06c03445a30f = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/zuGyJRR.png"});
+        marker_83d5e8e90cf14240838329a47e7b3e0b.setIcon(custom_icon_7e0702ced4f74f7fbf1a06c03445a30f);
+        
+    
+        var popup_30255b8960d74047a0bac740f7d55136 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_d9748b5c0fdb4bafb3d29799594a46e7 = $(`<div id="html_d9748b5c0fdb4bafb3d29799594a46e7" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020, 19:50 MDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>nan<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>nan<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Photographer kneels for a picture and pushed by a police officer.<br><br><center><b><a href="https://twitter.com/N_Waters89/status/1267784763185733633?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_30255b8960d74047a0bac740f7d55136.setContent(html_d9748b5c0fdb4bafb3d29799594a46e7);
+        
+
+        marker_83d5e8e90cf14240838329a47e7b3e0b.bindPopup(popup_30255b8960d74047a0bac740f7d55136)
+        ;
+
+        
+    
+    
+            var marker_bd53eec95dba4ea48ecb85c5b76a6dce = L.marker(
+                [47.615506, -122.318894],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_cf8359af51fa4407b9358e9ee557e9f8 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_bd53eec95dba4ea48ecb85c5b76a6dce.setIcon(custom_icon_cf8359af51fa4407b9358e9ee557e9f8);
+        
+    
+        var popup_ce6d827988c84f4081554199da366cd4 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_a8b5091d49d340f3ae540d7d0b6e91b6 = $(`<div id="html_a8b5091d49d340f3ae540d7d0b6e91b6" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>06/01/2020, 21:19 PDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Jo Ling Kent<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>MSNBC<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Journalist hit in the chest with a projectile while reporting with the camera rolling.<br><br><center><b><a href="https://twitter.com/jakelubb/status/1267676001078849536?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_ce6d827988c84f4081554199da366cd4.setContent(html_a8b5091d49d340f3ae540d7d0b6e91b6);
+        
+
+        marker_bd53eec95dba4ea48ecb85c5b76a6dce.bindPopup(popup_ce6d827988c84f4081554199da366cd4)
+        ;
+
+        
+    
+    
+            var marker_5a69adc4ad044cf3907d192ae6a90696 = L.marker(
+                [39.120395, -84.524634],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_5a1beca4454d4bf8ab746a52f9c66739 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/5uNPdy2.png"});
+        marker_5a69adc4ad044cf3907d192ae6a90696.setIcon(custom_icon_5a1beca4454d4bf8ab746a52f9c66739);
+        
+    
+        var popup_68bcea0438634e878cd2abf00ffcc25d = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_1f527736b9c64ea5999e309b04c6b4e3 = $(`<div id="html_1f527736b9c64ea5999e309b04c6b4e3" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>06/01/2020, 20:21 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Patrick Brennan<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Enquirer<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter approaches the scene of an arrest and is immediately hauled off and carried away by police.<br><br><center><b><a href="https://twitter.com/nswartsell/status/1267612155840528385?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_68bcea0438634e878cd2abf00ffcc25d.setContent(html_1f527736b9c64ea5999e309b04c6b4e3);
+        
+
+        marker_5a69adc4ad044cf3907d192ae6a90696.bindPopup(popup_68bcea0438634e878cd2abf00ffcc25d)
+        ;
+
+        
+    
+    
+            var marker_d0a832e1fdac47a09cf055304ccfbd58 = L.marker(
+                [44.94624, -93.27792],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_8dda5f61556c45c4ad734803b9162208 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_d0a832e1fdac47a09cf055304ccfbd58.setIcon(custom_icon_8dda5f61556c45c4ad734803b9162208);
+        
+    
+        var popup_4b2aca6aa2aa45818edff918d5245784 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_9fdcee3d6ddf4dfd88c0474f36a68450 = $(`<div id="html_9fdcee3d6ddf4dfd88c0474f36a68450" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>29/05/2020, 20:56 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Ed Ou<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>NBC News<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter is pepper sprayed, hit with a baton, and then wounded by projectile fire.<br><br><center><b><a href="https://twitter.com/N_Waters89/status/1267796940483448832?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_4b2aca6aa2aa45818edff918d5245784.setContent(html_9fdcee3d6ddf4dfd88c0474f36a68450);
+        
+
+        marker_d0a832e1fdac47a09cf055304ccfbd58.bindPopup(popup_4b2aca6aa2aa45818edff918d5245784)
+        ;
+
+        
+    
+    
+            var marker_cb9f5073ea354c4e8dd67529a375efd6 = L.marker(
+                [39.953235, -75.163423],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_23acc5ca96244d7ea87d2ca105247940 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/5uNPdy2.png"});
+        marker_cb9f5073ea354c4e8dd67529a375efd6.setIcon(custom_icon_23acc5ca96244d7ea87d2ca105247940);
+        
+    
+        var popup_aff9b21ae08448fb8b91f0ae71726633 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_4055880499544939b42f73b550601fcd = $(`<div id="html_4055880499544939b42f73b550601fcd" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>01/06/2020, 18:00 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Kristen Graham<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>The Inquirer<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Jouralist arrested despite having clearly visible press credentials.<br><br><center><b><a href="https://twitter.com/N_Waters89/status/1267812976217620482?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_aff9b21ae08448fb8b91f0ae71726633.setContent(html_4055880499544939b42f73b550601fcd);
+        
+
+        marker_cb9f5073ea354c4e8dd67529a375efd6.bindPopup(popup_aff9b21ae08448fb8b91f0ae71726633)
+        ;
+
+        
+    
+    
+            var marker_63025564468e4e2ca16fe15ca7106362 = L.marker(
+                [41.255269, -95.933232],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_37249712e2324fe183b1c64551924f15 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_63025564468e4e2ca16fe15ca7106362.setIcon(custom_icon_37249712e2324fe183b1c64551924f15);
+        
+    
+        var popup_bc66e7cf8e5546ee9e7dcf01c47b7cd4 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_f7c89f4c0443483aa891613e8d50143c = $(`<div id="html_f7c89f4c0443483aa891613e8d50143c" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>01/06/2020, 20:35 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Jon Kipper<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>KMTV 3 <br><h1 style="font-size:13px;"><b>Description</b>:</h1>Journalist is hit to the ground while filming by riot officers even while yelling that he is press. Once they realize he is press, they let him go and move him to the side.<br><br><center><b><a href="https://twitter.com/jonnykip21/status/1267630906442948608?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_bc66e7cf8e5546ee9e7dcf01c47b7cd4.setContent(html_f7c89f4c0443483aa891613e8d50143c);
+        
+
+        marker_63025564468e4e2ca16fe15ca7106362.bindPopup(popup_bc66e7cf8e5546ee9e7dcf01c47b7cd4)
+        ;
+
+        
+    
+    
+            var marker_d791db0432b84485bffaaf5048d1974e = L.marker(
+                [34.076141, -118.356371],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_5580ddc2c9614995b1fcabe5a22b04a5 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_d791db0432b84485bffaaf5048d1974e.setIcon(custom_icon_5580ddc2c9614995b1fcabe5a22b04a5);
+        
+    
+        var popup_015c4594054e46bb850d5600c4f8e9c1 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_c2ca75b56b04437ab4beb1664b977682 = $(`<div id="html_c2ca75b56b04437ab4beb1664b977682" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020, 18:35 PDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Bing Guan<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>-----<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Journalist hit with less lethal round even with press credentials clearly visible.<br><br><center><b><a href="https://twitter.com/bing_guan/status/1266904605226487809?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_015c4594054e46bb850d5600c4f8e9c1.setContent(html_c2ca75b56b04437ab4beb1664b977682);
+        
+
+        marker_d791db0432b84485bffaaf5048d1974e.bindPopup(popup_015c4594054e46bb850d5600c4f8e9c1)
+        ;
+
+        
+    
+    
+            var marker_fd88502d176b4ec680cb5f053e584f59 = L.marker(
+                [43.046735, -76.147506],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_9b2cfdc4a86b439ab5715f631f24de49 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/zuGyJRR.png"});
+        marker_fd88502d176b4ec680cb5f053e584f59.setIcon(custom_icon_9b2cfdc4a86b439ab5715f631f24de49);
+        
+    
+        var popup_1bf2daeff9614360b1631531a2dd7347 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_ad36943610e8457bbcfaad38484d356e = $(`<div id="html_ad36943610e8457bbcfaad38484d356e" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05/2020, 21:37 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Dennis Nett<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Syracuse.com<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Photojournalist pushed by police despite wearing press credentials.<br><br><center><b><a href="https://twitter.com/syracusedotcom/status/1267520170278506501?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_1bf2daeff9614360b1631531a2dd7347.setContent(html_ad36943610e8457bbcfaad38484d356e);
+        
+
+        marker_fd88502d176b4ec680cb5f053e584f59.bindPopup(popup_1bf2daeff9614360b1631531a2dd7347)
+        ;
+
+        
+    
+    
+            var marker_10878acd76844296932088ab1ae94a86 = L.marker(
+                [43.074902, -89.396445],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_7751c73ad1d3462e939f31a376b9e453 = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.imgur.com/nsmJ9Mb.png"});
+        marker_10878acd76844296932088ab1ae94a86.setIcon(custom_icon_7751c73ad1d3462e939f31a376b9e453);
+        
+    
+        var popup_ab45521c3165424ca742d9d5d064f854 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_ee66b7701a71407ab00878ef51a63f30 = $(`<div id="html_ee66b7701a71407ab00878ef51a63f30" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>01/06/2020, 04:11 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>George Balekji<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>NBC 15<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Tear gas thrown at a news crew as they are interviewing someone.<br><br><center><b><a href="https://twitter.com/GeorgeBalekji/status/1267383314010312710?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_ab45521c3165424ca742d9d5d064f854.setContent(html_ee66b7701a71407ab00878ef51a63f30);
+        
+
+        marker_10878acd76844296932088ab1ae94a86.bindPopup(popup_ab45521c3165424ca742d9d5d064f854)
+        ;
+
+        
+    
+    
+            var marker_3cb572410c8e40d5a58f2c1de4379191 = L.marker(
+                [40.00595, -83.009096],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_45b609b3afa8434088139157c17e1684 = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.imgur.com/nsmJ9Mb.png"});
+        marker_3cb572410c8e40d5a58f2c1de4379191.setIcon(custom_icon_45b609b3afa8434088139157c17e1684);
+        
+    
+        var popup_07536b2cd393465abe54fa9b7523492e = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_5b045cf6a00446ccb40cb6ea63996276 = $(`<div id="html_5b045cf6a00446ccb40cb6ea63996276" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>01/06/2020, 22:29 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>-----<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>The Lantern<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporters sprayed with tear gas by police despite repeatedly identifying themselves as press.<br><br><center><b><a href="https://twitter.com/TheLantern/status/1267644471317090305">Twitter Link</a></b></center></div>`)[0];
+            popup_07536b2cd393465abe54fa9b7523492e.setContent(html_5b045cf6a00446ccb40cb6ea63996276);
+        
+
+        marker_3cb572410c8e40d5a58f2c1de4379191.bindPopup(popup_07536b2cd393465abe54fa9b7523492e)
+        ;
+
+        
+    
+    
+            var marker_d7d0cf0c3c014915806e6fa7d0c12999 = L.marker(
+                [41.591385, -93.605171],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_7fbac185523b489ebb0620038d2f126b = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.imgur.com/nsmJ9Mb.png"});
+        marker_d7d0cf0c3c014915806e6fa7d0c12999.setIcon(custom_icon_7fbac185523b489ebb0620038d2f126b);
+        
+    
+        var popup_9161c946402b447d9e24b06a9f57d4bd = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_7150940c6f1243629c52daeca8c588e1 = $(`<div id="html_7150940c6f1243629c52daeca8c588e1" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>02/06/2020, 00:48 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Katie Akin<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Des Moines Register<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter repeatedly tells approaching police she's press before being screamed at and pepper sprayed.<br><br><center><b><a href="https://twitter.com/katie_akin/status/1267694434847731713">Twitter Link</a></b></center></div>`)[0];
+            popup_9161c946402b447d9e24b06a9f57d4bd.setContent(html_7150940c6f1243629c52daeca8c588e1);
+        
+
+        marker_d7d0cf0c3c014915806e6fa7d0c12999.bindPopup(popup_9161c946402b447d9e24b06a9f57d4bd)
+        ;
+
+        
+    
+    
+            var marker_f4b40ff017de403b8b36700917a488b0 = L.marker(
+                [32.779642, -96.822911],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_f055530cfcd8482fbf845525d9a5f9b3 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/5uNPdy2.png"});
+        marker_f4b40ff017de403b8b36700917a488b0.setIcon(custom_icon_f055530cfcd8482fbf845525d9a5f9b3);
+        
+    
+        var popup_2251f0ec617e4d82998c5b20374d4a5b = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_f112d5a121ba4c5bb88a8ba09721f4e9 = $(`<div id="html_f112d5a121ba4c5bb88a8ba09721f4e9" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>01/06/2020, 22:42 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Steven Zetti<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Dallas Voice<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter arrested for not having a laminated press pass.<br><br><center><b><a href="https://twitter.com/stevanzetti/status/1267662732326776832?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_2251f0ec617e4d82998c5b20374d4a5b.setContent(html_f112d5a121ba4c5bb88a8ba09721f4e9);
+        
+
+        marker_f4b40ff017de403b8b36700917a488b0.bindPopup(popup_2251f0ec617e4d82998c5b20374d4a5b)
+        ;
+
+        
+    
+    
+            var marker_d5f0ef52e70c495c9f086c6b8f5e6dbb = L.marker(
+                [41.256544, -95.933317],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_e3a8217719174d2fb015395da1008e87 = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.imgur.com/nsmJ9Mb.png"});
+        marker_d5f0ef52e70c495c9f086c6b8f5e6dbb.setIcon(custom_icon_e3a8217719174d2fb015395da1008e87);
+        
+    
+        var popup_100ce46d954d4958a8458811b024168e = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_3f6418f0129542749f9e78ea0eb2216f = $(`<div id="html_3f6418f0129542749f9e78ea0eb2216f" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>31/05/2020, 20:52 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Mel (?)<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Freelance<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Journalist pepper sprayed despite showing clear press credentials.<br><br><center><b><a href="https://twitter.com/coldbrewedtool/status/1267272812030541826?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_100ce46d954d4958a8458811b024168e.setContent(html_3f6418f0129542749f9e78ea0eb2216f);
+        
+
+        marker_d5f0ef52e70c495c9f086c6b8f5e6dbb.bindPopup(popup_100ce46d954d4958a8458811b024168e)
+        ;
+
+        
+    
+    
+            var marker_e10028d9557a49a9b00aca908bc84649 = L.marker(
+                [34.748686, -92.274608],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_3c5c592213b34f65bdbe8d556ac2400c = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/5uNPdy2.png"});
+        marker_e10028d9557a49a9b00aca908bc84649.setIcon(custom_icon_3c5c592213b34f65bdbe8d556ac2400c);
+        
+    
+        var popup_1ad102567e8249ae92af94b73d2c82a6 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_be7d26fe27e64582bb3a1eb2e94ff0aa = $(`<div id="html_be7d26fe27e64582bb3a1eb2e94ff0aa" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>02/06/2020, 22:31 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>-----<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>KATV<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Two reporters were arrested despite showing their press credentials to the police officers.<br><br><center><b><a href="https://twitter.com/KATVNews/status/1268022360961101830?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_1ad102567e8249ae92af94b73d2c82a6.setContent(html_be7d26fe27e64582bb3a1eb2e94ff0aa);
+        
+
+        marker_e10028d9557a49a9b00aca908bc84649.bindPopup(popup_1ad102567e8249ae92af94b73d2c82a6)
+        ;
+
+        
+    
+    
+            var marker_8060f826b0904599838e6ec9eba82287 = L.marker(
+                [38.90028, -77.038115],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_6b28c3a2ed4c4642a69cd95a4aed38ea = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.imgur.com/nsmJ9Mb.png"});
+        marker_8060f826b0904599838e6ec9eba82287.setIcon(custom_icon_6b28c3a2ed4c4642a69cd95a4aed38ea);
+        
+    
+        var popup_8c814e2369f1433f91fe191ee3683ee7 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_1dfb3a8d534540dbbee0e30ce47b1b74 = $(`<div id="html_1dfb3a8d534540dbbee0e30ce47b1b74" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>03/06/2020, 00:53 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>CNN Crew<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>CNN<br><h1 style="font-size:13px;"><b>Description</b>:</h1>CNN crew is sprayed with pepper spray at close range despite clearly being press<br><br><center><b><a href="https://twitter.com/hunterw/status/1268042987042455553?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_8c814e2369f1433f91fe191ee3683ee7.setContent(html_1dfb3a8d534540dbbee0e30ce47b1b74);
+        
+
+        marker_8060f826b0904599838e6ec9eba82287.bindPopup(popup_8c814e2369f1433f91fe191ee3683ee7)
+        ;
+
+        
+    
+    
+            var marker_abafb9f17ff249008459b3f08e854670 = L.marker(
+                [40.710585, -74.009305],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_f90be773eb92439c9934281c2b7b5d15 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/zuGyJRR.png"});
+        marker_abafb9f17ff249008459b3f08e854670.setIcon(custom_icon_f90be773eb92439c9934281c2b7b5d15);
+        
+    
+        var popup_55d28d31d648471eacdd26ba27baecec = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_33389328b2d94d079aa3c0e247ce15e8 = $(`<div id="html_33389328b2d94d079aa3c0e247ce15e8" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>2/6/2020 0:00:00<br><h1 style="font-size:13px;"><b>Name</b>:</h1>AP Crew<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>AP<br><h1 style="font-size:13px;"><b>Description</b>:</h1>NYPD attempted to force the crew to stop filming by shoving them and ordering them to leave despite being clearly credentialed press.<br><br><center><b><a href="https://twitter.com/N_Waters89/status/1268097087280996352?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_55d28d31d648471eacdd26ba27baecec.setContent(html_33389328b2d94d079aa3c0e247ce15e8);
+        
+
+        marker_abafb9f17ff249008459b3f08e854670.bindPopup(popup_55d28d31d648471eacdd26ba27baecec)
+        ;
+
+        
+    
+    
+            var marker_9483ee5e079d4110b1e94410e234e7bd = L.marker(
+                [38.824391, -104.82232],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_b18a6aa4acfc49b38e8555718f8eff41 = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.imgur.com/nsmJ9Mb.png"});
+        marker_9483ee5e079d4110b1e94410e234e7bd.setIcon(custom_icon_b18a6aa4acfc49b38e8555718f8eff41);
+        
+    
+        var popup_bae614d9ff2c4e2385cca34c093fdd14 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_ccfc0d980ccc48e1ae1ce0c0cfd9f84c = $(`<div id="html_ccfc0d980ccc48e1ae1ce0c0cfd9f84c" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>02/06/2020, 23:42 MDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Spencer Wilson<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>KKTV<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Two journalists were pepper sprayed by police officers despite standing where they had been directed to and displaying press credentials.<br><br><center><b><a href="https://twitter.com/Spencer_WNews/status/1268062375657209857?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_bae614d9ff2c4e2385cca34c093fdd14.setContent(html_ccfc0d980ccc48e1ae1ce0c0cfd9f84c);
+        
+
+        marker_9483ee5e079d4110b1e94410e234e7bd.bindPopup(popup_bae614d9ff2c4e2385cca34c093fdd14)
+        ;
+
+        
+    
+    
+            var marker_1d7d854113a54c54b63cdeaf1808b94b = L.marker(
+                [27.949293, -82.455762],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_a119979472214010b45b2519c535b40a = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/zuGyJRR.png"});
+        marker_1d7d854113a54c54b63cdeaf1808b94b.setIcon(custom_icon_a119979472214010b45b2519c535b40a);
+        
+    
+        var popup_4635200d47c44e98be7dae94d191d945 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_8462fd3c30ea44658b348301a6cf6466 = $(`<div id="html_8462fd3c30ea44658b348301a6cf6466" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>03/06/2020, 02:18 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Divya Kumar<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Tampa Bay Times<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Journalist was detained by the police, despite clearly displaying her press credentials.<br><br><center><b><a href="https://twitter.com/jthalji/status/1268064444124401664?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_4635200d47c44e98be7dae94d191d945.setContent(html_8462fd3c30ea44658b348301a6cf6466);
+        
+
+        marker_1d7d854113a54c54b63cdeaf1808b94b.bindPopup(popup_4635200d47c44e98be7dae94d191d945)
+        ;
+
+        
+    
+    
+            var marker_b7ea7a2c4cfc4d1d9d65550ad9367782 = L.marker(
+                [27.771021, -82.652386],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_d22a80237af24d7a9f00799009b75615 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/zuGyJRR.png"});
+        marker_b7ea7a2c4cfc4d1d9d65550ad9367782.setIcon(custom_icon_d22a80237af24d7a9f00799009b75615);
+        
+    
+        var popup_ecadef3556404626ae88c13a5d258041 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_614761240b69462e8e3af54f50caf63f = $(`<div id="html_614761240b69462e8e3af54f50caf63f" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>03/06/2020, 02:18 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Jay Cridlin<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Tampa Bay Times<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Journalist was detained by the police, despite clearly displaying his press credentials.<br><br><center><b><a href="https://twitter.com/jthalji/status/1268064447014330369?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_ecadef3556404626ae88c13a5d258041.setContent(html_614761240b69462e8e3af54f50caf63f);
+        
+
+        marker_b7ea7a2c4cfc4d1d9d65550ad9367782.bindPopup(popup_ecadef3556404626ae88c13a5d258041)
+        ;
+
+        
+    
+    
+            var marker_75edd9b42eec4078aec1fc47fdbcf5ac = L.marker(
+                [29.42655, -98.487097],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_4c23a69339c54fdab69f7da286b7944b = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_75edd9b42eec4078aec1fc47fdbcf5ac.setIcon(custom_icon_4c23a69339c54fdab69f7da286b7944b);
+        
+    
+        var popup_39361c7cb9ed418395092911458323ea = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_cca318b684d7455888f6defb4c30e70d = $(`<div id="html_cca318b684d7455888f6defb4c30e70d" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>02/06/2020, 20:52 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Mark Dunphy<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>San Antonio Express - News<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was shot in the leg with a less lethal wooden munition.<br><br><center><b><a href="https://twitter.com/m_b_dunphy/status/1268029073558851585?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_39361c7cb9ed418395092911458323ea.setContent(html_cca318b684d7455888f6defb4c30e70d);
+        
+
+        marker_75edd9b42eec4078aec1fc47fdbcf5ac.bindPopup(popup_39361c7cb9ed418395092911458323ea)
+        ;
+
+        
+    
+    
+            var marker_73345470580e49e195da8c5f46ada2cd = L.marker(
+                [42.405542, -82.997185],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_f3004699aa3940a6b154a44bff57a9c2 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/zuGyJRR.png"});
+        marker_73345470580e49e195da8c5f46ada2cd.setIcon(custom_icon_f3004699aa3940a6b154a44bff57a9c2);
+        
+    
+        var popup_7f57ce6c35fc4d298e4b8c31bc819cd7 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_87dc9c63c7d14cf4aaaadd8c2ff25d22 = $(`<div id="html_87dc9c63c7d14cf4aaaadd8c2ff25d22" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>02/06/2020, 20:52 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Darcie Moran<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Detroit Free Press<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Reporter was detained and zip-tied by officers despite wearing a press badge and having her press credentials printed on a large sheet of paper taped to her back. They let her go when colleagues approached.<br><br><center><b><a href="https://twitter.com/JustCallmeBHunt/status/1267981691529957376?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_7f57ce6c35fc4d298e4b8c31bc819cd7.setContent(html_87dc9c63c7d14cf4aaaadd8c2ff25d22);
+        
+
+        marker_73345470580e49e195da8c5f46ada2cd.bindPopup(popup_7f57ce6c35fc4d298e4b8c31bc819cd7)
+        ;
+
+        
+    
+    
+            var marker_03cbaf19103a4ff49339a6fef39fb77e = L.marker(
+                [40.650067, -73.955807],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_c0367e19ca0741d988c471620dc07b08 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/5uNPdy2.png"});
+        marker_03cbaf19103a4ff49339a6fef39fb77e.setIcon(custom_icon_c0367e19ca0741d988c471620dc07b08);
+        
+    
+        var popup_1688b39386d543649ef6e451fe812aeb = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_bfe4d0818e1140d9baec866af0c5e94b = $(`<div id="html_bfe4d0818e1140d9baec866af0c5e94b" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Christopher Mathias<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Huffington Post<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Mathias was arrested while covering a protest. He communicated to the arresting officers that he was a journalist, and he was visibly wearing his press pass. He was taken to a holding cell and given a summons for "failure to disperse". Event likely ocurred on <br><br><center><b><a href="https://twitter.com/HuffPost/status/1268170822490787842?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_1688b39386d543649ef6e451fe812aeb.setContent(html_bfe4d0818e1140d9baec866af0c5e94b);
+        
+
+        marker_03cbaf19103a4ff49339a6fef39fb77e.bindPopup(popup_1688b39386d543649ef6e451fe812aeb)
+        ;
+
+        
+    
+    
+            var marker_9147d5bf649c4d6f8d20eab8c9671a2e = L.marker(
+                [39.738439, -104.984533],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_22ceef8b36de4b71b6c8f6ee134a9396 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_9147d5bf649c4d6f8d20eab8c9671a2e.setIcon(custom_icon_22ceef8b36de4b71b6c8f6ee134a9396);
+        
+    
+        var popup_bc60e65d2b35420fb81cffc4798a4f80 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_7bc03206c5d8431fb17e98173d3a49da = $(`<div id="html_7bc03206c5d8431fb17e98173d3a49da" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>29/05/2020, 20:56 MDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Hart Van Denburg<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Colorado Public Radio<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Van Denburg was hit in the chin with a tear gas canister.<br><br><center><b><a href="https://twitter.com/hartoutwest/status/1266564171178610691?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_bc60e65d2b35420fb81cffc4798a4f80.setContent(html_7bc03206c5d8431fb17e98173d3a49da);
+        
+
+        marker_9147d5bf649c4d6f8d20eab8c9671a2e.bindPopup(popup_bc60e65d2b35420fb81cffc4798a4f80)
+        ;
+
+        
+    
+    
+            var marker_71f56eb1580d43c484fb1fbdabe2947c = L.marker(
+                [44.947441, -93.239188],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_fa908f0aa8624994b1cd8969acba21b5 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_71f56eb1580d43c484fb1fbdabe2947c.setIcon(custom_icon_fa908f0aa8624994b1cd8969acba21b5);
+        
+    
+        var popup_cdc15aebf5214273bcb51a4b700b71cb = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_26df6cf7f9704380a1552a181a12b694 = $(`<div id="html_26df6cf7f9704380a1552a181a12b694" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>29/05/2020, 20:22 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Zach Roberts<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Freelance <br><h1 style="font-size:13px;"><b>Description</b>:</h1>Roberts was tear gas and hit in the leg by a "ricochet" rubber pellet. <br><br><center><b><a href="https://twitter.com/zdroberts/status/1266540495624339456?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_cdc15aebf5214273bcb51a4b700b71cb.setContent(html_26df6cf7f9704380a1552a181a12b694);
+        
+
+        marker_71f56eb1580d43c484fb1fbdabe2947c.bindPopup(popup_cdc15aebf5214273bcb51a4b700b71cb)
+        ;
+
+        
+    
+    
+            var marker_98ac4432c473478cb84e94f8989f623f = L.marker(
+                [44.949214, -93.233619],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_0c05fa25372f4e13831fd36188e2dbfd = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/iFf0XXn.png"});
+        marker_98ac4432c473478cb84e94f8989f623f.setIcon(custom_icon_0c05fa25372f4e13831fd36188e2dbfd);
+        
+    
+        var popup_aa8b55cb5fd14355881f2958cab08959 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_a3a31dc3ef454841a1859afcdd97ca8c = $(`<div id="html_a3a31dc3ef454841a1859afcdd97ca8c" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>27/05/2020, 19:27 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Jared Goyette<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Freelance<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Goyette was "hit" in the eye with an undisclosed object and tear gassed.<br><br><center><b><a href="https://twitter.com/JaredGoyette/status/1265786797650558976?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_aa8b55cb5fd14355881f2958cab08959.setContent(html_a3a31dc3ef454841a1859afcdd97ca8c);
+        
+
+        marker_98ac4432c473478cb84e94f8989f623f.bindPopup(popup_aa8b55cb5fd14355881f2958cab08959)
+        ;
+
+        
+    
+    
+            var marker_95be131718d5482f950e1e6e4dd00681 = L.marker(
+                [44.952634, -93.277916],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_689d0bedf3374d0c99f61f486319cb12 = L.icon({"iconSize": [55, 55], "iconUrl": "https://i.imgur.com/5uNPdy2.png"});
+        marker_95be131718d5482f950e1e6e4dd00681.setIcon(custom_icon_689d0bedf3374d0c99f61f486319cb12);
+        
+    
+        var popup_96d91b5e744d40adaf7a5664696d5404 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_4842d39731b545f09043202db13a1dd1 = $(`<div id="html_4842d39731b545f09043202db13a1dd1" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020, 21:00 CDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Craig Lassig / Stephen Maturen / Tannen Maury<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>Freelance<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Lassig, Maturen and Maury were arrested. They identified verbally as members of the media to the police prior to their arrest. They were held for approximately two hours.<br><br><center><b><a href="https://pressfreedomtracker.us/all-incidents/freelance-photojournalist-arrested-while-covering-minneapolis-protest/">Twitter Link</a></b></center></div>`)[0];
+            popup_96d91b5e744d40adaf7a5664696d5404.setContent(html_4842d39731b545f09043202db13a1dd1);
+        
+
+        marker_95be131718d5482f950e1e6e4dd00681.bindPopup(popup_96d91b5e744d40adaf7a5664696d5404)
+        ;
+
+        
+    
+    
+            var marker_2a135b72eea64c42aa967aab7247620f = L.marker(
+                [38.253801, -85.760214],
+                {}
+            ).addTo(marker_cluster_b7fac17781df4629b2bb740198a5adf0);
+        
+    
+        var custom_icon_761268095fac45fbb5120fcaf85342f2 = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.imgur.com/nsmJ9Mb.png"});
+        marker_2a135b72eea64c42aa967aab7247620f.setIcon(custom_icon_761268095fac45fbb5120fcaf85342f2);
+        
+    
+        var popup_95bb0fba47904450a97f2b113e5783a6 = L.popup({"closeButton": false, "maxWidth": 300, "minWidth": 100, "offset": [-10, -20]});
+
+        
+            var html_bcd42ce9fdc9421a954e6128fcb4a09d = $(`<div id="html_bcd42ce9fdc9421a954e6128fcb4a09d" style="width: 100.0%; height: 100.0%;"><h1 style="font-size:13px;"><b>Time</b>:</h1>30/05/2020, 20:11 EDT<br><h1 style="font-size:13px;"><b>Name</b>:</h1>Sara Sidery<br><h1 style="font-size:13px;"><b>Organization</b>:</h1>WDRB News<br><h1 style="font-size:13px;"><b>Description</b>:</h1>Sidery was tear gassed "shortly before going live" at a protest. <br><br><center><b><a href="https://twitter.com/SaraSideryWDRB/status/1266885032150536199?s=20">Twitter Link</a></b></center></div>`)[0];
+            popup_95bb0fba47904450a97f2b113e5783a6.setContent(html_bcd42ce9fdc9421a954e6128fcb4a09d);
+        
+
+        marker_2a135b72eea64c42aa967aab7247620f.bindPopup(popup_95bb0fba47904450a97f2b113e5783a6)
+        ;
+
+        
+    
+marker_81b6ba5566e14b9286730caa0d44571c.on("mouseover", function (e) {this.openPopup();});marker_81b6ba5566e14b9286730caa0d44571c.on("mouseover", function (e) {this.openPopup();});marker_81b6ba5566e14b9286730caa0d44571c.on("mouseover", function (e) {this.openPopup();});marker_f3f3c914d727467e86336d081356c44d.on("mouseover", function (e) {this.openPopup();});marker_f3f3c914d727467e86336d081356c44d.on("mouseover", function (e) {this.openPopup();});marker_f3f3c914d727467e86336d081356c44d.on("mouseover", function (e) {this.openPopup();});marker_9f4b7d163df140dfa811d7beb1a5a4fb.on("mouseover", function (e) {this.openPopup();});marker_9f4b7d163df140dfa811d7beb1a5a4fb.on("mouseover", function (e) {this.openPopup();});marker_9f4b7d163df140dfa811d7beb1a5a4fb.on("mouseover", function (e) {this.openPopup();});marker_c487cad477744206a9734e6ac5e64d0f.on("mouseover", function (e) {this.openPopup();});marker_c487cad477744206a9734e6ac5e64d0f.on("mouseover", function (e) {this.openPopup();});marker_c487cad477744206a9734e6ac5e64d0f.on("mouseover", function (e) {this.openPopup();});marker_05451cdf1a4f4e5d868810b739a931b2.on("mouseover", function (e) {this.openPopup();});marker_05451cdf1a4f4e5d868810b739a931b2.on("mouseover", function (e) {this.openPopup();});marker_05451cdf1a4f4e5d868810b739a931b2.on("mouseover", function (e) {this.openPopup();});marker_9e02e7674fab47928838309f823e8aac.on("mouseover", function (e) {this.openPopup();});marker_9e02e7674fab47928838309f823e8aac.on("mouseover", function (e) {this.openPopup();});marker_9e02e7674fab47928838309f823e8aac.on("mouseover", function (e) {this.openPopup();});marker_13af93e0c33a41f3a54f8c6943cf75fa.on("mouseover", function (e) {this.openPopup();});marker_13af93e0c33a41f3a54f8c6943cf75fa.on("mouseover", function (e) {this.openPopup();});marker_13af93e0c33a41f3a54f8c6943cf75fa.on("mouseover", function (e) {this.openPopup();});marker_bd661e08f75b4deba2a5c5a29330bfa8.on("mouseover", function (e) {this.openPopup();});marker_bd661e08f75b4deba2a5c5a29330bfa8.on("mouseover", function (e) {this.openPopup();});marker_bd661e08f75b4deba2a5c5a29330bfa8.on("mouseover", function (e) {this.openPopup();});marker_f0bc2b8788bf45ee819e1822f9292603.on("mouseover", function (e) {this.openPopup();});marker_f0bc2b8788bf45ee819e1822f9292603.on("mouseover", function (e) {this.openPopup();});marker_f0bc2b8788bf45ee819e1822f9292603.on("mouseover", function (e) {this.openPopup();});marker_e959bdc77b914e719d3d814d47a01382.on("mouseover", function (e) {this.openPopup();});marker_e959bdc77b914e719d3d814d47a01382.on("mouseover", function (e) {this.openPopup();});marker_e959bdc77b914e719d3d814d47a01382.on("mouseover", function (e) {this.openPopup();});marker_9d79200339454c868fc9adf82b80cda1.on("mouseover", function (e) {this.openPopup();});marker_9d79200339454c868fc9adf82b80cda1.on("mouseover", function (e) {this.openPopup();});marker_9d79200339454c868fc9adf82b80cda1.on("mouseover", function (e) {this.openPopup();});marker_e3f413b22a294fdcbb8a7c2cf8cbf25c.on("mouseover", function (e) {this.openPopup();});marker_e3f413b22a294fdcbb8a7c2cf8cbf25c.on("mouseover", function (e) {this.openPopup();});marker_e3f413b22a294fdcbb8a7c2cf8cbf25c.on("mouseover", function (e) {this.openPopup();});marker_54c0656884b649be8c11205dcb367ecd.on("mouseover", function (e) {this.openPopup();});marker_54c0656884b649be8c11205dcb367ecd.on("mouseover", function (e) {this.openPopup();});marker_54c0656884b649be8c11205dcb367ecd.on("mouseover", function (e) {this.openPopup();});marker_88a27ddc7ccb459ea98f6714486758cd.on("mouseover", function (e) {this.openPopup();});marker_88a27ddc7ccb459ea98f6714486758cd.on("mouseover", function (e) {this.openPopup();});marker_88a27ddc7ccb459ea98f6714486758cd.on("mouseover", function (e) {this.openPopup();});marker_0aebd4058f4644cf87327a15c31b5cef.on("mouseover", function (e) {this.openPopup();});marker_0aebd4058f4644cf87327a15c31b5cef.on("mouseover", function (e) {this.openPopup();});marker_0aebd4058f4644cf87327a15c31b5cef.on("mouseover", function (e) {this.openPopup();});marker_b4837999a1c1474e90d89d4bb7e59bab.on("mouseover", function (e) {this.openPopup();});marker_b4837999a1c1474e90d89d4bb7e59bab.on("mouseover", function (e) {this.openPopup();});marker_b4837999a1c1474e90d89d4bb7e59bab.on("mouseover", function (e) {this.openPopup();});marker_4f133491fb0b41a19592b42f8bdb5092.on("mouseover", function (e) {this.openPopup();});marker_4f133491fb0b41a19592b42f8bdb5092.on("mouseover", function (e) {this.openPopup();});marker_4f133491fb0b41a19592b42f8bdb5092.on("mouseover", function (e) {this.openPopup();});marker_43ce28fe2a044f0990713100c31f2e7f.on("mouseover", function (e) {this.openPopup();});marker_43ce28fe2a044f0990713100c31f2e7f.on("mouseover", function (e) {this.openPopup();});marker_43ce28fe2a044f0990713100c31f2e7f.on("mouseover", function (e) {this.openPopup();});marker_d6b5871698604b8389a8726f02f3db8f.on("mouseover", function (e) {this.openPopup();});marker_d6b5871698604b8389a8726f02f3db8f.on("mouseover", function (e) {this.openPopup();});marker_d6b5871698604b8389a8726f02f3db8f.on("mouseover", function (e) {this.openPopup();});marker_ecc2e2467c404e278a67f9ff6cdcce3c.on("mouseover", function (e) {this.openPopup();});marker_ecc2e2467c404e278a67f9ff6cdcce3c.on("mouseover", function (e) {this.openPopup();});marker_ecc2e2467c404e278a67f9ff6cdcce3c.on("mouseover", function (e) {this.openPopup();});marker_354448341a6c416981764609c746b410.on("mouseover", function (e) {this.openPopup();});marker_354448341a6c416981764609c746b410.on("mouseover", function (e) {this.openPopup();});marker_354448341a6c416981764609c746b410.on("mouseover", function (e) {this.openPopup();});marker_bf06b4690d90409fa2a7c0c478d87990.on("mouseover", function (e) {this.openPopup();});marker_bf06b4690d90409fa2a7c0c478d87990.on("mouseover", function (e) {this.openPopup();});marker_bf06b4690d90409fa2a7c0c478d87990.on("mouseover", function (e) {this.openPopup();});marker_8080263b2d88481685cb6a70e76d185a.on("mouseover", function (e) {this.openPopup();});marker_8080263b2d88481685cb6a70e76d185a.on("mouseover", function (e) {this.openPopup();});marker_8080263b2d88481685cb6a70e76d185a.on("mouseover", function (e) {this.openPopup();});marker_0abb791bda4f448b85c25a5abfaec950.on("mouseover", function (e) {this.openPopup();});marker_0abb791bda4f448b85c25a5abfaec950.on("mouseover", function (e) {this.openPopup();});marker_0abb791bda4f448b85c25a5abfaec950.on("mouseover", function (e) {this.openPopup();});marker_7277803473174005b6403bd24adaaf8c.on("mouseover", function (e) {this.openPopup();});marker_7277803473174005b6403bd24adaaf8c.on("mouseover", function (e) {this.openPopup();});marker_7277803473174005b6403bd24adaaf8c.on("mouseover", function (e) {this.openPopup();});marker_76380e67c8b84677a37b16f82fe649e9.on("mouseover", function (e) {this.openPopup();});marker_76380e67c8b84677a37b16f82fe649e9.on("mouseover", function (e) {this.openPopup();});marker_76380e67c8b84677a37b16f82fe649e9.on("mouseover", function (e) {this.openPopup();});marker_df6a2e85f535464e9f2797d2c192fd69.on("mouseover", function (e) {this.openPopup();});marker_df6a2e85f535464e9f2797d2c192fd69.on("mouseover", function (e) {this.openPopup();});marker_df6a2e85f535464e9f2797d2c192fd69.on("mouseover", function (e) {this.openPopup();});marker_90e655addf3e4f77a60b86de008d4b05.on("mouseover", function (e) {this.openPopup();});marker_90e655addf3e4f77a60b86de008d4b05.on("mouseover", function (e) {this.openPopup();});marker_90e655addf3e4f77a60b86de008d4b05.on("mouseover", function (e) {this.openPopup();});marker_7edc63ec35694e5c996f664916a7b332.on("mouseover", function (e) {this.openPopup();});marker_7edc63ec35694e5c996f664916a7b332.on("mouseover", function (e) {this.openPopup();});marker_7edc63ec35694e5c996f664916a7b332.on("mouseover", function (e) {this.openPopup();});marker_fc9df7a8f98b422fbf360890df6ee8fb.on("mouseover", function (e) {this.openPopup();});marker_fc9df7a8f98b422fbf360890df6ee8fb.on("mouseover", function (e) {this.openPopup();});marker_fc9df7a8f98b422fbf360890df6ee8fb.on("mouseover", function (e) {this.openPopup();});marker_2e25bad42f444372a1c68542201333ea.on("mouseover", function (e) {this.openPopup();});marker_2e25bad42f444372a1c68542201333ea.on("mouseover", function (e) {this.openPopup();});marker_2e25bad42f444372a1c68542201333ea.on("mouseover", function (e) {this.openPopup();});marker_971f951bf2284f6e995c3f4a128f7864.on("mouseover", function (e) {this.openPopup();});marker_971f951bf2284f6e995c3f4a128f7864.on("mouseover", function (e) {this.openPopup();});marker_971f951bf2284f6e995c3f4a128f7864.on("mouseover", function (e) {this.openPopup();});marker_331a835714ec4b669e5d02aea55aecb5.on("mouseover", function (e) {this.openPopup();});marker_331a835714ec4b669e5d02aea55aecb5.on("mouseover", function (e) {this.openPopup();});marker_331a835714ec4b669e5d02aea55aecb5.on("mouseover", function (e) {this.openPopup();});marker_77a55b2d7b7d4b20887040f10192e269.on("mouseover", function (e) {this.openPopup();});marker_77a55b2d7b7d4b20887040f10192e269.on("mouseover", function (e) {this.openPopup();});marker_77a55b2d7b7d4b20887040f10192e269.on("mouseover", function (e) {this.openPopup();});marker_5785ac4ad1ca441d908bd2fad50aa882.on("mouseover", function (e) {this.openPopup();});marker_5785ac4ad1ca441d908bd2fad50aa882.on("mouseover", function (e) {this.openPopup();});marker_5785ac4ad1ca441d908bd2fad50aa882.on("mouseover", function (e) {this.openPopup();});marker_efd4df93ce874a7c8e742502945d242f.on("mouseover", function (e) {this.openPopup();});marker_efd4df93ce874a7c8e742502945d242f.on("mouseover", function (e) {this.openPopup();});marker_efd4df93ce874a7c8e742502945d242f.on("mouseover", function (e) {this.openPopup();});marker_fbe823931f8246429a473ed1b8485368.on("mouseover", function (e) {this.openPopup();});marker_fbe823931f8246429a473ed1b8485368.on("mouseover", function (e) {this.openPopup();});marker_fbe823931f8246429a473ed1b8485368.on("mouseover", function (e) {this.openPopup();});marker_b7e3c58f7f6147e683c993d8dd0c0ad5.on("mouseover", function (e) {this.openPopup();});marker_b7e3c58f7f6147e683c993d8dd0c0ad5.on("mouseover", function (e) {this.openPopup();});marker_b7e3c58f7f6147e683c993d8dd0c0ad5.on("mouseover", function (e) {this.openPopup();});marker_ee806e93bf464370b29331acc3be7701.on("mouseover", function (e) {this.openPopup();});marker_ee806e93bf464370b29331acc3be7701.on("mouseover", function (e) {this.openPopup();});marker_ee806e93bf464370b29331acc3be7701.on("mouseover", function (e) {this.openPopup();});marker_fa6ca4847b27402481ad3d9cb44307a9.on("mouseover", function (e) {this.openPopup();});marker_fa6ca4847b27402481ad3d9cb44307a9.on("mouseover", function (e) {this.openPopup();});marker_fa6ca4847b27402481ad3d9cb44307a9.on("mouseover", function (e) {this.openPopup();});marker_1b7bfab17392483caa1d95c3209b81dc.on("mouseover", function (e) {this.openPopup();});marker_1b7bfab17392483caa1d95c3209b81dc.on("mouseover", function (e) {this.openPopup();});marker_1b7bfab17392483caa1d95c3209b81dc.on("mouseover", function (e) {this.openPopup();});marker_81262251299b4b818e1894a21d4587bb.on("mouseover", function (e) {this.openPopup();});marker_81262251299b4b818e1894a21d4587bb.on("mouseover", function (e) {this.openPopup();});marker_81262251299b4b818e1894a21d4587bb.on("mouseover", function (e) {this.openPopup();});marker_95578b4242894a29a164a3243e34e10c.on("mouseover", function (e) {this.openPopup();});marker_95578b4242894a29a164a3243e34e10c.on("mouseover", function (e) {this.openPopup();});marker_95578b4242894a29a164a3243e34e10c.on("mouseover", function (e) {this.openPopup();});marker_73380785ffd44495a900ea11f9108037.on("mouseover", function (e) {this.openPopup();});marker_73380785ffd44495a900ea11f9108037.on("mouseover", function (e) {this.openPopup();});marker_73380785ffd44495a900ea11f9108037.on("mouseover", function (e) {this.openPopup();});marker_8753fbae045a44d9877318e812aeaa39.on("mouseover", function (e) {this.openPopup();});marker_8753fbae045a44d9877318e812aeaa39.on("mouseover", function (e) {this.openPopup();});marker_8753fbae045a44d9877318e812aeaa39.on("mouseover", function (e) {this.openPopup();});marker_f419af8c9aa847a8b068043b6d806dc7.on("mouseover", function (e) {this.openPopup();});marker_f419af8c9aa847a8b068043b6d806dc7.on("mouseover", function (e) {this.openPopup();});marker_f419af8c9aa847a8b068043b6d806dc7.on("mouseover", function (e) {this.openPopup();});marker_4e1ad0a4427b4b16aae6b687a499125d.on("mouseover", function (e) {this.openPopup();});marker_4e1ad0a4427b4b16aae6b687a499125d.on("mouseover", function (e) {this.openPopup();});marker_4e1ad0a4427b4b16aae6b687a499125d.on("mouseover", function (e) {this.openPopup();});marker_51fead7964cc47e9a5315bee736794c9.on("mouseover", function (e) {this.openPopup();});marker_51fead7964cc47e9a5315bee736794c9.on("mouseover", function (e) {this.openPopup();});marker_51fead7964cc47e9a5315bee736794c9.on("mouseover", function (e) {this.openPopup();});marker_8d7077190d984be38484e975a9f398a0.on("mouseover", function (e) {this.openPopup();});marker_8d7077190d984be38484e975a9f398a0.on("mouseover", function (e) {this.openPopup();});marker_8d7077190d984be38484e975a9f398a0.on("mouseover", function (e) {this.openPopup();});marker_fb209d23f8d046c290a6c3d4bc03f456.on("mouseover", function (e) {this.openPopup();});marker_fb209d23f8d046c290a6c3d4bc03f456.on("mouseover", function (e) {this.openPopup();});marker_fb209d23f8d046c290a6c3d4bc03f456.on("mouseover", function (e) {this.openPopup();});marker_fcbc2b2147814fb890f7b378e3b72154.on("mouseover", function (e) {this.openPopup();});marker_fcbc2b2147814fb890f7b378e3b72154.on("mouseover", function (e) {this.openPopup();});marker_fcbc2b2147814fb890f7b378e3b72154.on("mouseover", function (e) {this.openPopup();});marker_6afdfac3a9724423bbd517d29539abdb.on("mouseover", function (e) {this.openPopup();});marker_6afdfac3a9724423bbd517d29539abdb.on("mouseover", function (e) {this.openPopup();});marker_6afdfac3a9724423bbd517d29539abdb.on("mouseover", function (e) {this.openPopup();});marker_8d3ad49340aa4fa2a154601c935d2a10.on("mouseover", function (e) {this.openPopup();});marker_8d3ad49340aa4fa2a154601c935d2a10.on("mouseover", function (e) {this.openPopup();});marker_8d3ad49340aa4fa2a154601c935d2a10.on("mouseover", function (e) {this.openPopup();});marker_af2ebcee769c47c6be6e4905a0203dfd.on("mouseover", function (e) {this.openPopup();});marker_af2ebcee769c47c6be6e4905a0203dfd.on("mouseover", function (e) {this.openPopup();});marker_af2ebcee769c47c6be6e4905a0203dfd.on("mouseover", function (e) {this.openPopup();});marker_119650f26caa4d74ad31a257c4fbfb14.on("mouseover", function (e) {this.openPopup();});marker_119650f26caa4d74ad31a257c4fbfb14.on("mouseover", function (e) {this.openPopup();});marker_119650f26caa4d74ad31a257c4fbfb14.on("mouseover", function (e) {this.openPopup();});marker_20b8d3c03bfa4012ba306937019c3cdf.on("mouseover", function (e) {this.openPopup();});marker_20b8d3c03bfa4012ba306937019c3cdf.on("mouseover", function (e) {this.openPopup();});marker_20b8d3c03bfa4012ba306937019c3cdf.on("mouseover", function (e) {this.openPopup();});marker_c021b3a6a9fb43699d427257199148be.on("mouseover", function (e) {this.openPopup();});marker_c021b3a6a9fb43699d427257199148be.on("mouseover", function (e) {this.openPopup();});marker_c021b3a6a9fb43699d427257199148be.on("mouseover", function (e) {this.openPopup();});marker_47e0ef167a2445218a56590e15981495.on("mouseover", function (e) {this.openPopup();});marker_47e0ef167a2445218a56590e15981495.on("mouseover", function (e) {this.openPopup();});marker_47e0ef167a2445218a56590e15981495.on("mouseover", function (e) {this.openPopup();});marker_995c8f14e56b49859150f0fdfd5bdcc7.on("mouseover", function (e) {this.openPopup();});marker_995c8f14e56b49859150f0fdfd5bdcc7.on("mouseover", function (e) {this.openPopup();});marker_995c8f14e56b49859150f0fdfd5bdcc7.on("mouseover", function (e) {this.openPopup();});marker_c8ecaba5111d4f88a5cecfc03a069c29.on("mouseover", function (e) {this.openPopup();});marker_c8ecaba5111d4f88a5cecfc03a069c29.on("mouseover", function (e) {this.openPopup();});marker_c8ecaba5111d4f88a5cecfc03a069c29.on("mouseover", function (e) {this.openPopup();});marker_448e4b9c55144d62b11f7aa05d60b7da.on("mouseover", function (e) {this.openPopup();});marker_448e4b9c55144d62b11f7aa05d60b7da.on("mouseover", function (e) {this.openPopup();});marker_448e4b9c55144d62b11f7aa05d60b7da.on("mouseover", function (e) {this.openPopup();});marker_8ba75d6bb1cd4684a854a1581a61712d.on("mouseover", function (e) {this.openPopup();});marker_8ba75d6bb1cd4684a854a1581a61712d.on("mouseover", function (e) {this.openPopup();});marker_8ba75d6bb1cd4684a854a1581a61712d.on("mouseover", function (e) {this.openPopup();});marker_1cdd49d4018d4c1183a0e08a9e6a7876.on("mouseover", function (e) {this.openPopup();});marker_1cdd49d4018d4c1183a0e08a9e6a7876.on("mouseover", function (e) {this.openPopup();});marker_1cdd49d4018d4c1183a0e08a9e6a7876.on("mouseover", function (e) {this.openPopup();});marker_46df29a4c86145438d058fe3c85e8dd1.on("mouseover", function (e) {this.openPopup();});marker_46df29a4c86145438d058fe3c85e8dd1.on("mouseover", function (e) {this.openPopup();});marker_46df29a4c86145438d058fe3c85e8dd1.on("mouseover", function (e) {this.openPopup();});marker_7be4fa7769b14ad6892b5d23d93290e4.on("mouseover", function (e) {this.openPopup();});marker_7be4fa7769b14ad6892b5d23d93290e4.on("mouseover", function (e) {this.openPopup();});marker_7be4fa7769b14ad6892b5d23d93290e4.on("mouseover", function (e) {this.openPopup();});marker_c5374dcba8ed4dec9d73c003816a9ae5.on("mouseover", function (e) {this.openPopup();});marker_c5374dcba8ed4dec9d73c003816a9ae5.on("mouseover", function (e) {this.openPopup();});marker_c5374dcba8ed4dec9d73c003816a9ae5.on("mouseover", function (e) {this.openPopup();});marker_231dd2489e92458bbdb7d5b070198b6d.on("mouseover", function (e) {this.openPopup();});marker_231dd2489e92458bbdb7d5b070198b6d.on("mouseover", function (e) {this.openPopup();});marker_231dd2489e92458bbdb7d5b070198b6d.on("mouseover", function (e) {this.openPopup();});marker_0878ea5d76714e7faae81c78d149a071.on("mouseover", function (e) {this.openPopup();});marker_0878ea5d76714e7faae81c78d149a071.on("mouseover", function (e) {this.openPopup();});marker_0878ea5d76714e7faae81c78d149a071.on("mouseover", function (e) {this.openPopup();});marker_ae79f8e1a90541c4b795308f79879ed3.on("mouseover", function (e) {this.openPopup();});marker_ae79f8e1a90541c4b795308f79879ed3.on("mouseover", function (e) {this.openPopup();});marker_ae79f8e1a90541c4b795308f79879ed3.on("mouseover", function (e) {this.openPopup();});marker_027bafee06dd4c56809dbf32f9cbc091.on("mouseover", function (e) {this.openPopup();});marker_027bafee06dd4c56809dbf32f9cbc091.on("mouseover", function (e) {this.openPopup();});marker_027bafee06dd4c56809dbf32f9cbc091.on("mouseover", function (e) {this.openPopup();});marker_e5e6e0a5b09147f8874e3a57f1d2b32b.on("mouseover", function (e) {this.openPopup();});marker_e5e6e0a5b09147f8874e3a57f1d2b32b.on("mouseover", function (e) {this.openPopup();});marker_e5e6e0a5b09147f8874e3a57f1d2b32b.on("mouseover", function (e) {this.openPopup();});marker_1f8a08a2e6b040e38626703c90d7949c.on("mouseover", function (e) {this.openPopup();});marker_1f8a08a2e6b040e38626703c90d7949c.on("mouseover", function (e) {this.openPopup();});marker_1f8a08a2e6b040e38626703c90d7949c.on("mouseover", function (e) {this.openPopup();});marker_5aac71033ee4499e8ce4ee7ab9c7690b.on("mouseover", function (e) {this.openPopup();});marker_5aac71033ee4499e8ce4ee7ab9c7690b.on("mouseover", function (e) {this.openPopup();});marker_5aac71033ee4499e8ce4ee7ab9c7690b.on("mouseover", function (e) {this.openPopup();});marker_83d5e8e90cf14240838329a47e7b3e0b.on("mouseover", function (e) {this.openPopup();});marker_83d5e8e90cf14240838329a47e7b3e0b.on("mouseover", function (e) {this.openPopup();});marker_83d5e8e90cf14240838329a47e7b3e0b.on("mouseover", function (e) {this.openPopup();});marker_bd53eec95dba4ea48ecb85c5b76a6dce.on("mouseover", function (e) {this.openPopup();});marker_bd53eec95dba4ea48ecb85c5b76a6dce.on("mouseover", function (e) {this.openPopup();});marker_bd53eec95dba4ea48ecb85c5b76a6dce.on("mouseover", function (e) {this.openPopup();});marker_5a69adc4ad044cf3907d192ae6a90696.on("mouseover", function (e) {this.openPopup();});marker_5a69adc4ad044cf3907d192ae6a90696.on("mouseover", function (e) {this.openPopup();});marker_5a69adc4ad044cf3907d192ae6a90696.on("mouseover", function (e) {this.openPopup();});marker_d0a832e1fdac47a09cf055304ccfbd58.on("mouseover", function (e) {this.openPopup();});marker_d0a832e1fdac47a09cf055304ccfbd58.on("mouseover", function (e) {this.openPopup();});marker_d0a832e1fdac47a09cf055304ccfbd58.on("mouseover", function (e) {this.openPopup();});marker_cb9f5073ea354c4e8dd67529a375efd6.on("mouseover", function (e) {this.openPopup();});marker_cb9f5073ea354c4e8dd67529a375efd6.on("mouseover", function (e) {this.openPopup();});marker_cb9f5073ea354c4e8dd67529a375efd6.on("mouseover", function (e) {this.openPopup();});marker_63025564468e4e2ca16fe15ca7106362.on("mouseover", function (e) {this.openPopup();});marker_63025564468e4e2ca16fe15ca7106362.on("mouseover", function (e) {this.openPopup();});marker_63025564468e4e2ca16fe15ca7106362.on("mouseover", function (e) {this.openPopup();});marker_d791db0432b84485bffaaf5048d1974e.on("mouseover", function (e) {this.openPopup();});marker_d791db0432b84485bffaaf5048d1974e.on("mouseover", function (e) {this.openPopup();});marker_d791db0432b84485bffaaf5048d1974e.on("mouseover", function (e) {this.openPopup();});marker_fd88502d176b4ec680cb5f053e584f59.on("mouseover", function (e) {this.openPopup();});marker_fd88502d176b4ec680cb5f053e584f59.on("mouseover", function (e) {this.openPopup();});marker_fd88502d176b4ec680cb5f053e584f59.on("mouseover", function (e) {this.openPopup();});marker_10878acd76844296932088ab1ae94a86.on("mouseover", function (e) {this.openPopup();});marker_10878acd76844296932088ab1ae94a86.on("mouseover", function (e) {this.openPopup();});marker_10878acd76844296932088ab1ae94a86.on("mouseover", function (e) {this.openPopup();});marker_3cb572410c8e40d5a58f2c1de4379191.on("mouseover", function (e) {this.openPopup();});marker_3cb572410c8e40d5a58f2c1de4379191.on("mouseover", function (e) {this.openPopup();});marker_3cb572410c8e40d5a58f2c1de4379191.on("mouseover", function (e) {this.openPopup();});marker_d7d0cf0c3c014915806e6fa7d0c12999.on("mouseover", function (e) {this.openPopup();});marker_d7d0cf0c3c014915806e6fa7d0c12999.on("mouseover", function (e) {this.openPopup();});marker_d7d0cf0c3c014915806e6fa7d0c12999.on("mouseover", function (e) {this.openPopup();});marker_f4b40ff017de403b8b36700917a488b0.on("mouseover", function (e) {this.openPopup();});marker_f4b40ff017de403b8b36700917a488b0.on("mouseover", function (e) {this.openPopup();});marker_f4b40ff017de403b8b36700917a488b0.on("mouseover", function (e) {this.openPopup();});marker_d5f0ef52e70c495c9f086c6b8f5e6dbb.on("mouseover", function (e) {this.openPopup();});marker_d5f0ef52e70c495c9f086c6b8f5e6dbb.on("mouseover", function (e) {this.openPopup();});marker_d5f0ef52e70c495c9f086c6b8f5e6dbb.on("mouseover", function (e) {this.openPopup();});marker_e10028d9557a49a9b00aca908bc84649.on("mouseover", function (e) {this.openPopup();});marker_e10028d9557a49a9b00aca908bc84649.on("mouseover", function (e) {this.openPopup();});marker_e10028d9557a49a9b00aca908bc84649.on("mouseover", function (e) {this.openPopup();});marker_8060f826b0904599838e6ec9eba82287.on("mouseover", function (e) {this.openPopup();});marker_8060f826b0904599838e6ec9eba82287.on("mouseover", function (e) {this.openPopup();});marker_8060f826b0904599838e6ec9eba82287.on("mouseover", function (e) {this.openPopup();});marker_abafb9f17ff249008459b3f08e854670.on("mouseover", function (e) {this.openPopup();});marker_abafb9f17ff249008459b3f08e854670.on("mouseover", function (e) {this.openPopup();});marker_abafb9f17ff249008459b3f08e854670.on("mouseover", function (e) {this.openPopup();});marker_9483ee5e079d4110b1e94410e234e7bd.on("mouseover", function (e) {this.openPopup();});marker_9483ee5e079d4110b1e94410e234e7bd.on("mouseover", function (e) {this.openPopup();});marker_9483ee5e079d4110b1e94410e234e7bd.on("mouseover", function (e) {this.openPopup();});marker_1d7d854113a54c54b63cdeaf1808b94b.on("mouseover", function (e) {this.openPopup();});marker_1d7d854113a54c54b63cdeaf1808b94b.on("mouseover", function (e) {this.openPopup();});marker_1d7d854113a54c54b63cdeaf1808b94b.on("mouseover", function (e) {this.openPopup();});marker_b7ea7a2c4cfc4d1d9d65550ad9367782.on("mouseover", function (e) {this.openPopup();});marker_b7ea7a2c4cfc4d1d9d65550ad9367782.on("mouseover", function (e) {this.openPopup();});marker_b7ea7a2c4cfc4d1d9d65550ad9367782.on("mouseover", function (e) {this.openPopup();});marker_75edd9b42eec4078aec1fc47fdbcf5ac.on("mouseover", function (e) {this.openPopup();});marker_75edd9b42eec4078aec1fc47fdbcf5ac.on("mouseover", function (e) {this.openPopup();});marker_75edd9b42eec4078aec1fc47fdbcf5ac.on("mouseover", function (e) {this.openPopup();});marker_73345470580e49e195da8c5f46ada2cd.on("mouseover", function (e) {this.openPopup();});marker_73345470580e49e195da8c5f46ada2cd.on("mouseover", function (e) {this.openPopup();});marker_73345470580e49e195da8c5f46ada2cd.on("mouseover", function (e) {this.openPopup();});marker_03cbaf19103a4ff49339a6fef39fb77e.on("mouseover", function (e) {this.openPopup();});marker_03cbaf19103a4ff49339a6fef39fb77e.on("mouseover", function (e) {this.openPopup();});marker_03cbaf19103a4ff49339a6fef39fb77e.on("mouseover", function (e) {this.openPopup();});marker_9147d5bf649c4d6f8d20eab8c9671a2e.on("mouseover", function (e) {this.openPopup();});marker_9147d5bf649c4d6f8d20eab8c9671a2e.on("mouseover", function (e) {this.openPopup();});marker_9147d5bf649c4d6f8d20eab8c9671a2e.on("mouseover", function (e) {this.openPopup();});marker_71f56eb1580d43c484fb1fbdabe2947c.on("mouseover", function (e) {this.openPopup();});marker_71f56eb1580d43c484fb1fbdabe2947c.on("mouseover", function (e) {this.openPopup();});marker_71f56eb1580d43c484fb1fbdabe2947c.on("mouseover", function (e) {this.openPopup();});marker_98ac4432c473478cb84e94f8989f623f.on("mouseover", function (e) {this.openPopup();});marker_98ac4432c473478cb84e94f8989f623f.on("mouseover", function (e) {this.openPopup();});marker_98ac4432c473478cb84e94f8989f623f.on("mouseover", function (e) {this.openPopup();});marker_95be131718d5482f950e1e6e4dd00681.on("mouseover", function (e) {this.openPopup();});marker_95be131718d5482f950e1e6e4dd00681.on("mouseover", function (e) {this.openPopup();});marker_95be131718d5482f950e1e6e4dd00681.on("mouseover", function (e) {this.openPopup();});marker_2a135b72eea64c42aa967aab7247620f.on("mouseover", function (e) {this.openPopup();});marker_2a135b72eea64c42aa967aab7247620f.on("mouseover", function (e) {this.openPopup();});marker_2a135b72eea64c42aa967aab7247620f.on("mouseover", function (e) {this.openPopup();});</script>
